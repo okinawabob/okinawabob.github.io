@@ -1,0 +1,169 @@
+/* Home page external css file used at www.islandman.org updated Dec 6, 2007.
+ Author: Robert Laurie
+ This is an elastic stretchable layout design that heavily utilizes the em
+ length specification for most elements.
+ See References for details:
+ http://jontangerine.com/log/2007/09/the-incredible-em-and-elastic-layouts-with-css
+ http://jontangerine.com/silo/css/pixels-to-ems/
+ http://www.bigbaer.com/css_tutorials/css.scale.image.html.tutorial.htm
+ http://riddle.pl/emcalc/
+ ---------------------------------------------------------*/
+html {
+  font-size: 100%; /* Required for elastic layout design  */
+}
+
+body {
+  font-size: 1em; /* Required for elastic layout design   */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #9999FF;
+  color: #FFFFFF;
+  background-image: url(wpBubbles.jpg);
+  padding: 0;
+  margin: 0;
+}
+
+div#mainSlab {
+  background-image: url(wpStoneBlue.jpg);
+  width: 38.2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  border-width: 1em;
+  border-style: solid;
+  border-left-color: #666688;
+  border-top-color: #666688;
+  border-right-color: #333355;
+  border-bottom-color: #333355;
+  background-color: #555577;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 2.00em;
+  text-align: center;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 1.50em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  font-style: italic;
+  margin-top: 0em;
+  margin-bottom: 0.3em;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.05em;
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+hr {
+  margin: 0 0 0 0;
+  clear: both;
+}
+
+div#navCourses {
+  margin-top: 0.8em;
+  width: 8.6em;
+  float: left;
+  text-align: right;
+}
+
+div#mainImage {
+  float: left;
+  overflow: hidden;
+  margin-top: 0.8em;
+  margin-left: 1em;
+  border-style: double;
+  border-color: #FFFFFF;
+  border-width: 0.4em;
+  width: 17.2em;
+  height: 9.61em;
+}
+
+div#navJourneys {
+  float: left;
+  margin-top: 0.8em;
+  margin-left: 1em;
+  width: 8em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:link {
+  color: #FFFF00;
+}
+
+a:visited {
+  color: #FFFF66;
+}
+
+a:focus {
+  color: #FFFF00;
+}
+
+a:hover {
+  color: #0033CC;
+  background-color: #CCCC33;
+}
+
+a:active {
+  color: #FFFF00;
+}
+
+div#statCounter {
+  margin: 1em;
+  height: 4.5em;
+  font-size: 1em;
+}
+
+div#statCounter p {
+  font-family: "Times New Roman", "Times", serif;
+  font-weight: normal;
+  margin-bottom: 0.75em;
+}
+
+div#statCounter div {
+  font-family: "Times New Roman", "Times", serif;
+  font-weight: normal;
+  margin-bottom: 0.75em;
+}
+
+.rightSide {
+  float: right;
+  font-style: italic;
+  display: block;
+  clear: both;
+}
+
+img {
+  border: none;
+}
+
+img#timeWeather {
+  width: 7.9375em;
+  height: 2.5625em;
+  margin-bottom: 0.75em;
+}
+
+div#mainImage img#main {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+

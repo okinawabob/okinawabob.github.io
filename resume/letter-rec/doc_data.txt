@@ -1,0 +1,11 @@
+InfoKey: Creator
+InfoValue: pdftk 1.41 - www.pdftk.com
+InfoKey: Producer
+InfoValue: itext-paulo-155 (itextpdf.sf.net-lowagie.com)
+InfoKey: ModDate
+InfoValue: D:20110401073631-10'00'
+InfoKey: CreationDate
+InfoValue: D:20110401073631-10'00'
+PdfID0: 4c7e2fe9c8aef7865b75185cda2c861
+PdfID1: e58faeb25a31d556b56c61a120ff26a2
+NumberOfPages: 8

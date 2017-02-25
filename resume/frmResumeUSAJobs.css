@@ -1,0 +1,40 @@
+P {	margin-top:0pt; margin-bottom:4pt; 
+	font-size:12pt;}
+
+P.h1 {margin-top:28pt; margin-bottom:24pt; 
+	font-weight:800; letter-spacing:2pt; font-size: 20pt; font-family:"Verdana","Arial","Helvetica",sans-serif;}
+P.h2 {margin-top:10pt; margin-bottom:5pt; 
+	font-weight:700; letter-spacing:1pt; font-size: 13pt;
+	font-family:"Verdana","Arial","Helvetica",sans-serif;}
+P.h3 {margin-top:6pt; margin-bottom:3pt; margin-left:0pt;  
+	font-family:"Arial","Helvetica",sans-serif;
+	font-style:normal; font-weight:600; letter-spacing:1pt; font-size:13pt;}
+P.h4 {margin-top:4pt; margin-bottom:2pt; margin-left:40pt;
+	font-size:12pt; font-family:"Arial","Helvetica",sans-serif;}
+P.h5 {margin-top:4pt; margin-bottom:2pt; margin-left:60pt;
+	  font-size:12pt; font-family:"Arial","Helvetica",sans-serif;}
+P.h6 {margin-top:4pt; margin-bottom:2pt;font-weight:600; 
+	  font-size:12pt; font-style:italic; 
+	  font-family:"Arial","Helvetica",sans-serif;}
+P.normal {margin-top:2pt; margin-bottom:2pt; 
+	  font-size:12pt; font-family:"Times New Roman", "Times", serif;}
+
+P.address {margin-top:5pt; margin-bottom:0pt;font-size:12pt; 
+	  font-family:"Arial","Helvetica",sans-serif;}
+	  
+LI {margin-top:0pt; margin-right:0pt; margin-bottom:4pt; margin-left:10pt;
+	 font-size:12pt; font-family: "Times New Roman", "Times", serif;}
+UL{margin-top:4pt; margin-right:0pt; margin-bottom:4pt; margin-left:10pt; }
+
+BLOCKQUOTE {margin-top:0pt; margin-right:0pt; margin-bottom:4pt; margin-left:20pt;}
+
+SMALL {font-weight:400; font-size:9pt;}
+A {text-decoration:none; color:#FF0000}
+A:link {text-decoration:none; }
+A:visited {text-decoration:none;}
+A:active {text-decoration:none; }
+A:hover {text-decoration:underline; color:#FF3300}
+	
+body {  background-color: #FFFFFF; background-image: url(../wpWhiteCoursePaper.jpg);
+font-family:"Times New Roman","Times",serif; font-size:12pt}
+

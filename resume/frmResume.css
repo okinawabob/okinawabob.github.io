@@ -1,0 +1,27 @@
+P {	margin-top:0pt; margin-bottom:4pt; 
+	font-size:12pt; font-family:"Arial","Helvetica",sans-serif;}
+
+P.h1 {margin-top:0pt; margin-bottom:5pt; 
+	font-weight:800; letter-spacing:2pt; font-size: 20pt; font-family:"Verdana","Arial","Helvetica",sans-serif;}
+P.h2 {margin-top:0pt; margin-bottom:2px; 
+	font-weight:700; letter-spacing:1pt; font-size: 14pt;
+	font-family:"Verdana","Arial","Helvetica",sans-serif;}
+P.h3 {margin-top:2pt; margin-bottom:2pt; margin-left:20pt;
+	font-style:normal; font-weight:600; letter-spacing:1pt; font-size:13pt;}
+P.h4 {margin-top:2pt; margin-bottom:2pt; margin-left:40pt;
+	font-size:12pt; font-family:"Georgia", "Times New Roman", "Times", serif;}
+P.h5 {margin-top:2pt; margin-bottom:2pt; margin-left:60pt;
+	  font-size:11pt; font-family:"Georgia", "Times New Roman", "Times", serif;}
+P.h6 {margin-top:2pt; margin-bottom:2pt;font-weight:600; 
+	  font-size:10pt; font-style:italic}
+P.address {margin-top:5pt; margin-bottom:0pt;font-size:12pt;}
+
+	  
+P.item {margin-top:0pt; margin-right:0pt; margin-bottom:4pt; margin-left:60pt;
+	 font-size:12pt; font-family:"Georgia", "Times New Roman", "Times", serif;}
+
+SMALL {font-weight:400; font-size:9pt;}
+A {text-decoration: none; color:#000099;}
+A:hover {text-decoration:underline; color:#CC0000;}
+	
+body {  background-color: #FFFFFF; background-image: url(../wpWhiteCoursePaper.jpg)}

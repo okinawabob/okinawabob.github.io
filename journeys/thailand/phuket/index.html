@@ -1,0 +1,20 @@
+<HTML><HEAD>
+<TITLE>Double Sum Program</TITLE>
+<SCRIPT LANGUAGE = "JavaScript">
+   var firstEntry, secondEntry; // Strings entered by user
+   var Number1, Number2,        // Converted number entries
+       Sum, Double;   			// sum of number1 and number2
+   //Prompt and Receive numbers
+   firstEntry = window.prompt( "Enter first number", "0" );
+   secondEntry = window.prompt( "Enter second number", "0" );
+   // Convert numbers from strings to integers
+   Number1 = parseInt( firstEntry );
+   Number2 = parseInt( secondEntry );
+   // Add the numbers
+   Sum = Number1 + Number2;
+   Double = Sum * 2;
+   // Display the results
+   document.writeln( "<H2>The double sum is " + Double + "</H2>" );
+</SCRIPT></HEAD>
+<BODY><P>Click Refresh (or Reload) to run the script again</P>
+</BODY></HTML>

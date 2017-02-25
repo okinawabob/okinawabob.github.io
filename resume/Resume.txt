@@ -1,0 +1,139 @@
+Robert M. Laurie
+ 
+Temporary Address: 			
+PSC 561  Box 1801			
+FPO, AP  96310-0029			
+Home Phone: +81-611-753-5144 (Japan)	
+Work  Phone: +81-611-753-3494 (Japan)
+
+Permanent Address:
+1005 E. Bay Point Road
+Bayside WI  53217
+Phone: 414-228-7812
+
+Web Site: http://www.islandman.org 
+Email: theman@islandman.org 
+ 
+ 
+ 
+ACADEMIC EMPLOYMENT EXPERIENCE:
+
+University of Maryland - Overseas Division
+3501 University Boulevard, Adelphi, Maryland 20783 
+Associate Professor, August 2001 through Present 
+Lecturer, January 1998 through June 1999
+Taught courses with the following course content in Japan and Guam:
+C++ Programming (Visual C++)
+Introduction to Programming and Algorithm Design
+Dynamic HTML (JavaScript and Cascaded Style Sheets)
+Web Site Design (HTML and Web Graphics)
+Database Management (Access Relational Database Design and SQL) 
+Computer Hardware & Concepts (How Computers Work)
+Telecommunications & Computer Networking (Ethernet & TCP/IP) 
+Management Information Systems 
+Introduction to Computer Based System (Using MS Office)
+ 
+Michigan Technological University
+Electrical & Computer Engineering Department, 
+Houghton, Michigan 49931 
+Instructor, January 2000 through 2001
+Instructor, 1988 to 1990
+Graduate Teaching Assistant, 1983 to 1986
+Taught courses and laboratories with the following course titles:
+Introduction to Computer Engineering 
+Digital and Analog Electronics
+Computer Networking
+Circuits and Instrumentation
+Linear Control Systems 
+Introduction to Web Site Design 
+Intermediate Web Site Design 
+(Korea University of Technology & Education (HRDI), Korea)
+ESL Program - Web Site Design 
+(Kyung Pook National University, Korea)
+ 
+
+ENGINEERING EMPLOYMENT EXPERIENCE:
+
+Magic Edge Incorporated / LSSI
+1245 Space Park Way, Mountain View, California 94043
+Software Engineer,  1994 through 1997
+Virtual reality company that produces flight simulation equipment
+Design and write specifications for both software and hardware
+Control software programming using C and Visual Basic
+Control design using PC I/O cards for motion and safety systems
+CAD wiring schematic layout
+Project management and vendor procurement
+ 
+John Deere Incorporated
+18600 S. John Deere Road, Dubuque, Iowa 52001
+Electrical Engineer, 1991 through 1993
+Construction equipment division, experimental test center
+Durability test design for construction equipment components
+Servo loop control design
+Programmable logic controller programming
+GUI design using Allen Bradley Control View MMI
+Lab View PC Software used for data acquisition and control
+Courses Taken: ISO 9000 TQM Training, SLC500 PLC Programming 
+Course Taught: PLC Programming for United Auto Workers Technicians
+ 
+AT&T Bell Laboratories
+1600 Osgood Street, North Andover, Massachusetts 01825
+Member of Technical Staff, 1986 through 1988
+Digital transmission system division
+Digital circuit design at systems and board level
+Manufacturing test automation of in-circuit test area
+Designed In-Circuit test fixture system (Patent applied for)
+Courses Taken: Total Quality Management, Robotics, UNIX, C 
+ 
+Rosemount Incorporated
+Minneapolis, Minnesota
+Manufacturing Test Engineer,  1980 through 1982
+Aerospace division, both military and civilian products
+Manufacturing test automation for avionics sensor products 
+Flow tunnel automation project
+ 
+
+LICENSED PROFESSIONAL ENGINEER:     
+Michigan License No. 34024      (Since 1988)
+ 
+
+AUTHORED PROFESSIONAL PUBLICATIONS: 
+
+Fundamentals of Digital Systems 
+McGraw-Hill Custom Publishing, New York, NY, June 2000
+ISBN: 0-07-245681-7
+
+Sequential Control Synthesis Using State Tables
+IEEE IECON'87, Cambridge, Massachusetts, November 1987
+
+State Machine Architecture Optimized For Control
+IEEE IECON'87, Cambridge, Massachusetts, November 1987
+
+Slim Line Test Fixtures For In-Circuit Testing
+AT&T - Test Conference, Princeton, NJ, October 1987 
+ 
+
+EDUCATION:
+
+M.S. Electrical Engineering 
+GPA=3.83 (A=4.0), Thesis, Diploma, Transcript
+Michigan Technological University, Houghton, Michigan 49931
+
+B.S. Mechanical Engineering 
+GPA=3.30 (A=4.0), Diploma, Transcript 
+Michigan Technological University, Houghton, Michigan 49931
+ 
+Non-degree Courses Taken: 
+Michigan Technological University, Houghton, Michigan 49931 
+Database Management
+Foundations of Education 
+Computers in Education
+Measurement and Evaluation in Education & Psychology
+Drawing and Painting Classes
+ 
+Spanish Intensive Language Course
+Bio-Itza Eco-Cultural Escuela, San José, Petén, Guatemala, Certificate, 1999
+
+German Intensive Language Course
+Grundstuffe II (2 Months), Certificate, Goethe Institute, Munich, German
+ 

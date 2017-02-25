@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /php/
+Disallow: /s*/
+Sitemap: http://islandman.org/sitemap.xml

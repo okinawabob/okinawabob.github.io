@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <!-- ^ Language Specification en=English ja=Japanese ko=Korean zh=Chinese -->
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <!-- Character Encoding utf-8 is unicode (multilanguage) -->
+    <!-- Keywords utilized by search engine for indexing purposes -->
+    <meta content="robert, laurie, resume, computer, programmer, engineer, electrical, plc, automation"
+      name="Keywords" />
+    <!-- Description displayed by search engine if your page is displayed -->
+    <meta content="Resume of Robert Laurie" name="Description" />
+    <!-- Search robots should index (default), option: noindex, nofollow -->
+    <meta content="all, index" name="robots" />
+    <!-- Search robots suggested revisit interval (for frequent updates) -->
+    <meta content="30 Days" name="Revisit-After" />
+    <!-- Disable search engine archive (default is archive)
+    <meta name="robots" content="noarchive" />  --><!-- Disable IE smart tags and image toolbar (2 tags below are required)
+    <meta name="MSSmartTagsPreventParsing" content="true" />    <meta http-equiv="imagetoolbar" content="false" /> --><!-- Author of the web page identification (not necessary) -->
+    <meta content="Robert Laurie" name="author" />
+    <!-- Copyright specification (not used by search engines) -->
+    <meta content="© 2007 Robert Laurie" name="copyright" />
+    <!-- Generatior tool that created code (not necessary) -->
+    <meta content="coded by hand" name="generator" />
+    <meta content="robert, laurie, resume, computer, programmer, engineer, electrical, plc, automation"
+      name="Keywords" />
+    <title>Resume of Robert M. Laurie</title>
+    <script src="../AntiSpam.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      //<![CDATA[
+      function newWindow(imgPopup, winName, winSize)
+      {
+        imgWindow = window.open(imgPopup, winName, winSize);
+        imgWindow.focus();
+      }
+      
+      //]]>
+    </script>
+    <link href="resume.css" type="text/css" media="screen" rel="stylesheet" />
+    <link href="resumePrint.css" type="text/css" media="print" rel="stylesheet" />
+  </head>
+  <body id="TOP">
+    <!--<div id="dvNavBarTop">
+      <div id="dvNavButtons">        <div class="rolloverHome">          <a href="../core.html" title="Click for HomePage"></a>        </div>        <div class="navButton">          <a href="#ACDEXP" title="Click for Academic Experience">&nbsp;&nbsp;Academic Exp.</a>        </div>        <div class="navButton">          <a href="#INDEXP" title="Click for Industry Experience">&nbsp;&nbsp;Industry Exp.</a>        </div>        <div class="navButton">          <a href="#PUB" title="Click for Publications">&nbsp;&nbsp;Publications</a>        </div>        <div class="navButton">          <a href="#EDUC" title="Click for Education">&nbsp;&nbsp;Education</a>        </div>        <div class="navButton">          <a href="#dvContent" title="Top of Page">&nbsp;&nbsp;Top</a>      	</div>			</div>    </div>-->
+    <div id="dvContent"> <img width="150" height="150" id="MyMug" alt="My Photo"
+        src="MeSakuraSm.jpg" />
+      <h1>Robert M. Laurie</h1>
+      <h6>Mailing Address:</h6>
+      <p> Robert Laurie <br />
+        PSC 455 Box 3601<br />
+        FPO, AP 96540<br />
+        <br />
+        Web Site: <a href="http://www.islandman.org">http://www.islandman.org</a>
+        <br />
+        Email:
+        <script type="text/javascript">
+          //<![CDATA[
+            AntiSpam("moc", "821.lmr", "liamg", "Your Web Site", "")
+          //]]>
+        </script> <br />
+        Telephone: +1-671-987-9849  (Guam)<br />
+      </p>
+      <p> <img width="650" height="5" alt="line divider" src="line.gif" /> </p>
+      <h2>Academic Employment Experience:</h2>
+      <h3 id="UMUC"><a href="http://www.asia.umuc.edu" target="_blank">University
+          of Maryland - Asia Division</a></h3>
+      <h4>3501 University Boulevard, Adelphi, Maryland 20783 <br />
+        Associate Professor, Iwakuni and Sasebo Japan, <br />
+        2009 through Present, 2001 through 2003, 1998 through 1999 <br />
+        Taught courses with the following course content: </h4>
+      <ul>
+        <li> <a href="../_umuc/cmis102/#Week0" target="_blank">CMIS102: Problem
+            Solving and Algorithms</a><a href="CourseEvals/CMIS102_2013F1.pdf">
+            <img src="imgCourseEvalBrn24.jpg" alt="Eval" title="Click to view course evaluation"
+              class="eval" /> </a> </li>
+        <li> CMIS140: Introduction to C++ Programming<a href="CourseEvals/Eval_CMIS140_2001fa2.pdf"><img
+              src="imgCourseEvalBrn24.jpg" alt="Eval" title="Click to view course evaluation"
+              class="eval" /></a></li>
+        <li><a href="../_umuc/cmis141/#Week0" target="_blank">CMIS141:
+            Introduction to Java Programming</a><a href="CourseEvals/CMIS141_2012sp2.pdf"><img
+              src="imgCourseEvalBrn24.jpg" alt="Eval" title="Click to view course evaluation"
+              class="eval" /></a></li>
+        <li><a href="../_umuc/cmis242/#Week0" target="_blank">CMIS242:
+            Intermediate Java Programming </a><a href="CourseEvals/CMIS242_2012su.pdf"><img
+              src="imgCourseEvalBrn24.jpg" alt="Eval" title="Click to view course evaluation"
+              class="eval" /></a></li>
+        <li> <a href="mailto:../_umuc/cmst385/#Week0" target="_blank">CMST385:
+            Web Site Design 1 (HTML5 and CSS) </a><a href="CourseEvals/CMST385_2012F1.pdf"><img
+              src="imgCourseEvalBrn24.jpg" alt="Eval" title="Click to view course evaluation"
+              class="eval" /></a> </li>
+        <li> <a href="../_umuc/cmst386/#Week0">CMST386: Web Site Design 2
+            (JavaScript) </a><a href="CourseEvals/Eval_CMST386_2002sp1.pdf"><img
+              src="imgCourseEvalBrn24.jpg" alt="Eval" title="Click to view course evaluation"
+              class="eval" /></a></li>
+        <li> IFSM201: Introduction to Computer Based System <a href="CourseEvals/IFSM201_2010Su.pdf"><img
+              src="imgCourseEvalBrn24.jpg" alt="Eval" title="Click to view course evaluation"
+              class="eval" /></a> </li>
+        <li> IFSM300: Management Information Systems<a href="CourseEvals/Eval_IFSM300_2002sp1.pdf"><img
+              class="eval" title="Click to view course evaluation" alt="Eval" src="imgCourseEvalBrn24.jpg" /></a>
+        </li>
+        <li> IFSM310: Computer Hardware &amp; Software Concepts<a href="CourseEvals/Eval_IFSM310_2001fa1.pdf"><img
+              src="imgCourseEvalBrn24.jpg" alt="Eval" title="Click to view course evaluation"
+              class="eval" /></a> </li>
+        <li> IFSM410:   Database Management and Design<a href="CourseEvals/Eval_IFSM410_2002sp2.pdf"><img
+              src="imgCourseEvalBrn24.jpg" alt="Eval" title="Click to view course evaluation"
+              class="eval" /></a> </li>
+        <li> IFSM450: Telecommunications &amp; Computer Networking<a href="CourseEvals/Eval_IFSM450_2002fa1.pdf"><img
+              src="imgCourseEvalBrn24.jpg" alt="Eval" title="Click to view course evaluation"
+              class="eval" /></a></li>
+        <li>MATH009: Beginning Algebra<a href="CourseEvals/MATH009_2012sp1.pdf"><img
+              src="imgCourseEvalBrn24.jpg" alt="Eval" title="Click to view course evaluation"
+              class="eval" /></a></li>
+        <li> MATH012: Intermediate Algebra<a href="CourseEvals/MATH012de_2011su.pdf"><img
+              src="imgCourseEvalBrn24.jpg" alt="Eval" title="Click to view course evaluation"
+              class="eval" /></a></li>
+        <li>MATH103: College Mathematics<a href="CourseEvals/MATH103_2012sp1.pdf"><img
+              src="imgCourseEvalBrn24.jpg" alt="Eval" title="Click to view course evaluation"
+              class="eval" /></a> </li>
+        <li>MATH107: College Algebra <a href="CourseEvals/Math107_2010S2.pdf"><img
+              src="imgCourseEvalBrn24.jpg" alt="Eval" title="Click to view course evaluation"
+              class="eval" /></a></li>
+      </ul>
+      <h3 id="NMC"><a href="http://www.nmcnet.edu">Northern Marianas College</a></h3>
+      <h4>P.O. Box 501250, Saipan, MP 96950, CNMI <br />
+        Instructor, August 2005 through 2008<br />
+        Teach courses with the following content: </h4>
+      <ul>
+        <li> <a href="../_nmc/cs103/index1.html">CS103: Introduction to
+            Computers</a> </li>
+        <li> <a href="../_nmc/cs225/index1.html">CS225: C+ Programming</a> </li>
+        <li> <a href="../_nmc/cs222/index1.html">CS222: Web Site Design</a> </li>
+        <li> <a href="../_nmc/cs227/index1.html">CS227: Introduction to
+            Programming</a> </li>
+        <li> <a href="../_nmc/cs229/index1.html">CS229: Java Programming</a> </li>
+      </ul>
+      <h3 id="UOG"><a href="http://www.uog.edu">University of Guam</a></h3>
+      <h4>Computer Science Department, Mathematical Sciences Division, <br />
+        UOG Station, Mangilao, GUAM 96923 <br />
+        Instructor, August 2003 through May 2005 <br />
+        Taught courses with the following content: </h4>
+      <ul>
+        <li> <a href="../uog/cs201/index.html">CS201: Web Programming</a> </li>
+        <li> <a href="../uog/cs202/index.html">CS202: Java Programming</a> </li>
+        <li> <a href="../uog/cs315/index.html">CS315: Database Management
+            Systems</a> </li>
+        <li> <a href="#">MA085: Developmental Mathematics: Arithmetic through
+            Algebra</a> </li>
+      </ul>
+      <h3><a href="http://www.mtu.edu">Michigan Technological University</a></h3>
+      <h4>Electrical &amp; Computer Engineering Department, Houghton, Michigan
+        49931 <br />
+        Instructor, January 2000 through 2001 <br />
+        Instructor, 1988 to 1990 <br />
+        Graduate Teaching Assistant, 1983 to 1986, <br />
+        <a href="MTULOR.PDF">Letters of Recommendation</a> <br />
+        Taught courses and laboratories with the following course titles: </h4>
+      <ul>
+        <li> EE260: Introduction to Computer Engineering </li>
+        <li> Digital and Analog Electronics</li>
+        <li>ECE450: Computer Networking </li>
+        <li> ECE301: Circuits and Instrumentation </li>
+        <li> EE371: Linear Control Systems </li>
+        <li> EE491: Introduction to Web Site Design </li>
+        <li> Intermediate Web Site Design <small> (Korea University of
+            Technology &amp; Education; Human Resource Development Institute;
+            Chonan, South Korea) </small> </li>
+        <li> ESL Program - Web Site Design <small> (Kyung Pook National
+            University; Taegu, South Korea) </small> </li>
+      </ul>
+      <h2>Industry Employment Experience:</h2>
+      <h3><a href="magicedge/index.html">Magic Edge Incorporated / LSSI</a></h3>
+      <h4>1245 Space Park Way, Mountain View, California 94043 <br />
+        Software Engineer, 1994 through 1997 <br />
+        Virtual reality company that produces flight simulation equipment </h4>
+      <ul>
+        <li> Design and write specifications for both software and hardware </li>
+        <li> Control software programming using C and Visual Basic </li>
+        <li> Control design using PC I/O cards for motion and safety systems </li>
+        <li> CAD wiring schematic layout </li>
+        <li> Project management and vendor procurement </li>
+      </ul>
+      <h3><a href="http://www.deere.com/ind">John Deere Incorporated</a></h3>
+      <h4>18600 S. John Deere Road, Dubuque, Iowa 52001 <br />
+        Electrical Engineer, 1991 through 1993 <br />
+        Construction equipment division, experimental test center </h4>
+      <ul>
+        <li> Durability test design for construction equipment components </li>
+        <li> Servo loop control design </li>
+        <li> Programmable logic controller programming </li>
+        <li> GUI design using Allen Bradley Control View MMI </li>
+        <li> Lab View PC Software used for data acquisition and control </li>
+        <li> Courses Taken: ISO 9000 TQM Training, SLC500 PLC Programming </li>
+        <li> Course Taught: PLC Programming for United Auto Workers Technicians
+        </li>
+      </ul>
+      <h3><a href="http://www.bell-labs.com/">AT&amp;T Bell Laboratories</a></h3>
+      <h4>1600 Osgood Street, North Andover, Massachusetts 01825 <br />
+        Member of Technical Staff, 1986 through 1988 <br />
+        Digital transmission system division </h4>
+      <ul>
+        <li> Digital circuit design at systems and board level </li>
+        <li> Manufacturing test automation of in-circuit test area </li>
+        <li> Designed In-Circuit test fixture system (Patent applied for) </li>
+        <li> Courses Taken: Total Quality Management, Robotics, UNIX, C </li>
+      </ul>
+      <h3><a href="http://www.rosemount.com">Rosemount Incorporated</a></h3>
+      <h4>Minneapolis, Minnesota <br />
+        Manufacturing Test Engineer, 1980 through 1982 <br />
+        Aerospace division, both military and civilian products </h4>
+      <ul>
+        <li> Manufacturing test automation for avionics sensor products </li>
+        <li> Flow tunnel automation project </li>
+      </ul>
+      <h2>Licensed Professional Engineer:</h2>
+      <h3><a href="javascript:newWindow('PE_License.html','winDiploma','resizable=no,width=450,height=360')">Michigan
+          License No. 34024</a> <small> (Since 1988) </small> </h3>
+      <h2 id="PUB">Authored Professional Publications:</h2>
+      <ul>
+        <li> <a href="ChapterAll.pdf">Fundamentals of Digital Systems</a>,
+          McGraw-Hill Custom Publishing, New York, NY,June 2000, ISBN:
+          0-07-245681-7 </li>
+        <li> <a href="IECON_Papers.PDF#page=3&amp;view=FitH">Sequential Control
+            Synthesis Using State Tables</a>, <a href="IECON_Papers.PDF#page=1&amp;view=FitH">IEEE
+            IECON'87</a>, Cambridge, Massachusetts, November 1987 </li>
+        <li> <a href="IECON_Papers.PDF#page=10&amp;view=FitH">State Machine
+            Architecture Optimized For Control</a> <a href="IECON_Papers.PDF#page=1&amp;view=FitH">IEEE
+            IECON'87</a>, Cambridge, Massachusetts, November 1987 </li>
+        <li> Slim Line Test Fixtures For In-Circuit Testing, AT&amp;T - Test
+          Conference, Princeton, NJ, October 1987 </li>
+      </ul>
+      <h2 id="EDUC">Education:</h2>
+      <h3><a href="http://www.ee.mtu.edu/">M.S. Electrical Engineering</a> <small>
+          (Computer Engineering Emphasis) </small> </h3>
+      <h4>GPA=3.83 (A=4.0), <a href="Thesis.PDF">Thesis</a>, <a href="javascript:newWindow('MSEE_Diploma.html','winDiploma','resizable=no,width=450,height=360')">Diploma</a><a
+          href="transcripts/trnGradBWd.pdf"><br />
+        </a> Michigan Technological University, Houghton, Michigan 49931 </h4>
+      <h3><a href="http://www.me.mtu.edu/">B.S. Mechanical Engineering</a> <small>
+          (Computer Modeling Emphasis) </small> </h3>
+      <h4>GPA=3.30 (A=4.0), <a href="javascript:newWindow('BSME_Diploma.html','winDiploma','resizable=no,width=450,height=360')">Diploma</a><br />
+        Michigan Technological University, Houghton, Michigan 49931 </h4>
+      <h3>Non-degree Courses Taken:</h3>
+      <h4><a href="http://www.mtu.edu">Michigan Technological University</a>,
+        Houghton, Michigan 49931</h4>
+      <ul>
+        <li> Database Management </li>
+        <li> Foundations of Education </li>
+        <li> Computers in Education </li>
+        <li> Measurement and Evaluation in Education &amp; Psychology </li>
+        <li> Drawing and Painting Classes </li>
+      </ul>
+      <dl>
+        <dt>Japanese Language Semester 1: Northern Marianas College, Saipan,
+          Fall 2007<br />
+        </dt>
+        <dt><a href="http://home.austin.rr.com/christinahull/ecomaya/bioitza/info.htm">Spanish
+            Intensive Language Course</a> </dt>
+        <dd> Bio-Itza Eco-Cultural Escuela, San José, Petén, Guatemala, <a href="javascript:newWindow('Guat_Diploma.html','winDiploma','resizable=no,width=450,height=360')">Certificate</a>,
+          1999 </dd>
+        <!----><dt> <a href="http://www.goethe.de/eindex.htm">German Intensive
+            Language Course</a> </dt>
+        <dd> Grundstuffe II (2 Months), Certificate, Goethe Institute, Munich,
+          German </dd>
+      </dl>
+    </div>
+  </body>
+</html>

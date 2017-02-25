@@ -1,0 +1,200 @@
+/* Home page external css file used at www.islandman.org/resume 
+ updated Dec 12, 2007.
+ Author: Robert Laurie
+ This layout includes a top menu bar with buttons.
+ This is an elastic stretchable layout design that heavily utilizes the em
+ length specification for most elements.
+ See References for details:
+ http://jontangerine.com/log/2007/09/the-incredible-em-and-elastic-layouts-with-css
+ http://jontangerine.com/silo/css/pixels-to-ems/
+ http://www.bigbaer.com/css_tutorials/css.scale.image.html.tutorial.htm
+ http://riddle.pl/emcalc/
+ ---------------------------------------------------------*/
+
+html {
+  font-size: 100%; /* Required for elastic layout design  */
+}
+
+body {
+  font-size: 1em; /* Required for elastic layout design   */
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #333333;
+  background-color: #FFFFCC; 
+  background-image: url(wpLines1.gif);
+}
+
+#navBar {
+  top: 0;
+  width: 100%;
+  height: 2.5000em;
+  background-color: #4466BB;
+  border-top:  0.250em solid #6688DD; 
+  border-bottom: 0.3750em solid #224499;
+}
+
+div#navBtnContainer {
+  width: 46.8750em;
+  height: 1.2500em;
+  background-color: #00FFFF;
+  margin-top: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+      
+#btHome {
+  margin-top: 0.5000em;
+  
+}
+/*
+ a {
+    display: block;
+    float: left;
+    height: 25px;
+    width: 128px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 900;
+    margin-top: 8px;
+    margin-left: 79px;
+    color: #990000;
+    background: #990000 url("btBlurMetalRed.gif") no-repeat;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navButton a:hover {
+    background-position: 0 -25px;
+    color: #FF3333;
+}
+.navButton a {
+    display: block;
+    float: left;
+    height: 25px;
+    width: 128px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 900;
+    margin-top: 8px;
+    margin-left: 79px;
+    color: #990000;
+    background: #990000 url("btBlurMetalRed.gif") no-repeat;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navButton a:hover {
+    background-position: 0 -25px;
+    color: #FF3333;
+}
+
+#dvPhoto{
+	position: absolute;
+	top: 20px;
+	left: 572px;
+} 
+
+/* Element Redefinition Specifications 
+
+a {text-decoration: none; margin-top:0px; margin-bottom:0px;}
+	a:hover {text-decoration:underline; color:#CC0000;}
+	a :link { color: #0000CC }
+ 	a :visited { color: #660099 }
+ 	a :active { color: #FF3300 }
+
+a img {border: none;}
+
+h1 {
+	margin-top:0; 
+  margin-bottom:15px; 
+  margin-left:100px; 
+  width: 400px;
+  text-align:center;
+	font-weight: 700; 
+  letter-spacing:2pt; 
+  font-size: 20pt;
+	font-family:"Verdana","Arial","Helvetica",sans-serif; 
+color:#000066;
+}
+
+h2 {
+	margin-top:5pt; 
+  margin-bottom:2pt;  
+	font-weight:700; 
+  letter-spacing:1px; 
+  font-size: 14pt;
+	font-family:"Verdana","Arial","Helvetica",sans-serif; 
+	color:#000066;
+}
+
+h3 {
+	margin-top:8pt; 
+  margin-bottom:2pt; 
+  margin-left:20px;
+	font-style:normal; 
+  font-weight:600; 
+  letter-spacing:1pt; font-size:12pt;
+	font-family:"Verdana","Arial","Helvetica",sans-serif; 
+	color:#000000;
+}
+h4 {
+	margin-top:2pt; 
+  margin-bottom:2pt; 
+  font-weight:400; 
+  margin-left:40px; 
+  font-size:12pt; 
+	font-family:"Georgia", "Times New Roman", "Times", serif; 
+	color:#000000;
+}
+h5 {
+	margin-top:2px; 
+  margin-bottom:2px; 
+  margin-left:40px;
+	font-size:12pt; 
+  font-family:"Georgia", "Times New Roman", "Times", serif;
+}
+h6 {
+	margin-top:0pt; 
+  margin-bottom:2pt; 
+  font-weight:500; 
+  font-style:italic;
+	font-size:10pt; 
+  font-family:"Georgia", "Times New Roman", "Times", serif;
+}
+p {
+	margin-top:0pt; 
+  margin-bottom:2pt; 
+  font-weight:500; 
+	font-size:10pt; 
+  font-family:"Georgia", "Times New Roman", "Times", serif;
+}
+
+small {font-weight:500; font-size:10pt; margin-left:10pt;}
+	
+ul {
+	margin-top:4pt; 
+  margin-bottom:2pt;
+	font-size:12pt; 
+ 	font-family:"Georgia", "Times New Roman", "Times", serif; 
+}
+ul li { 
+	list-style-image:url(bltDiamond.gif); 
+  list-style-position: outside;
+  margin-left:30px;
+}
+
+ul li a:hover {
+	text-decoration:underline; 
+  color:#CC0000;
+	list-style-image:url(bltDiamondV.gif); 
+  list-style-position:outside;
+}
+
+	
+	
+dt {margin-left:40px; font-family:"Georgia", "Times New Roman", "Times", serif; }
+
+dd {margin-top:3pt; margin-left:70px; font-family:"Georgia", "Times New Roman", "Times", serif; color:#000000;}
+*/

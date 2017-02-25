@@ -1,0 +1,318 @@
+body {
+  color: black;
+  background-color: #ffffcc;
+  text-align: center;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  background-image: url("wpLines1.gif");
+
+}
+
+#dvNavBarTop {
+  position: fixed;
+  top: 0px;
+  height: 100%;
+  background-image: url("wpMenuSideBlue.gif");
+  background-repeat: repeat-y;
+  z-index: 200;
+}
+
+#dvNavButtons {
+  width: 140px;
+}
+
+.rolloverHome a {
+  display: block;
+  height: 34px;
+  width: 34px;
+  margin-top: 25px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  background-color: #001788;
+  background-image: url("btHomeBlue.gif");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+}
+
+.rolloverHome a:hover {
+  background-position: 0px -34px;
+}
+
+.rolloverTop a {
+  display: block;
+  height: 33px;
+  width: 33px;
+  margin-top: 25px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  background-color: #001788;
+  background-image: url("btTopBlue.gif");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+}
+
+.rolloverTop a:hover {
+  background-position: 0px -34px;
+}
+
+.navButton a {
+  display: block;
+  height: 25px;
+  width: 128px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-left: 3px;
+  color: #000099;
+  background-color: #001788;
+  background-image: url("btLongBlue.gif");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navButton a:link {
+  color: #000099;
+  text-decoration: none;
+}
+
+.navButton a:visited {
+  color: #330099;
+  text-decoration: none;
+}
+
+.navButton a:focus {
+  background-position: 0px -25px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.navButton a:hover {
+  background-position: 0px -25px;
+  color: blue;
+  text-decoration: none;
+}
+
+.navButton a:active {
+  color: #3333ff;
+}
+
+.dvSpacer {
+  height: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+#dvContent {
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  z-index: 100;
+}
+
+#MyMug {
+  border-top-width: medium;
+  border-top-style: none;
+  border-top-color: initial;
+  border-top-color: -moz-initial;
+  border-right-width: medium;
+  border-right-style: none;
+  border-right-color: initial;
+  border-right-color: -moz-initial;
+  border-bottom-width: medium;
+  border-bottom-style: none;
+  border-bottom-color: initial;
+  border-bottom-color: -moz-initial;
+  border-left-width: medium;
+  border-left-style: none;
+  border-left-color: initial;
+  border-left-color: -moz-initial;
+  float: right;
+  margin-top: 15px;
+}
+
+#rolloverTop a {
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin-top: 25px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+  background-color: #990000;
+  background-image: url("btTop.gif");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+}
+
+#rolloverTop a:hover {
+  background-position: 0px -50px;
+}
+
+#rolloverTop a:active {
+  background-position: 0px -100px;
+}
+
+a:link {
+  color: #0000cc;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #660099;
+  text-decoration: none;
+}
+
+a:focus {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #cc0000;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #ff3300;
+}
+
+h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 100px;
+  width: 400px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2pt;
+  font-size: 18pt;
+  font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+  color: #000066;
+}
+
+h2 {
+  margin-top: 0pt;
+  margin-bottom: 2pt;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 16pt;
+  font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+  color: #000066;
+}
+
+h3 {
+  margin-top: 8pt;
+  margin-bottom: 2pt;
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1pt;
+  font-size: 15pt;
+  font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+  color: black;
+}
+
+h4 {
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+  font-weight: 400;
+  margin-left: 40px;
+  font-size: 14pt;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  color: black;
+}
+
+h5 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 40px;
+  font-size: 13pt;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+h6 {
+  margin-top: 0pt;
+  margin-bottom: 2pt;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 12pt;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+p {
+  margin-top: 0pt;
+  margin-bottom: 2pt;
+  font-weight: 500;
+  font-size: 14pt;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+small {
+  font-weight: 500;
+  font-size: 12pt;
+  margin-left: 10pt;
+}
+
+ul {
+  margin-top: 4pt;
+  margin-bottom: 2pt;
+  font-size: 14pt;
+  font-weight: 600;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+ul li {
+  list-style-image: url("bltDiamond.gif");
+  list-style-position: outside;
+  margin-left: 30px;
+  line-height: 22pt;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  color: #cc0000;
+  list-style-image: url("bltDiamondV.gif");
+  list-style-position: outside;
+}
+
+dt {
+  margin-left: 40px;
+  font-size: 14pt;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+dd {
+  margin-top: 3pt;
+  margin-left: 70px;
+   font-size: 14pt;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  color: black;
+}
+
+.eval {
+  clear: right;
+  float: right;
+}

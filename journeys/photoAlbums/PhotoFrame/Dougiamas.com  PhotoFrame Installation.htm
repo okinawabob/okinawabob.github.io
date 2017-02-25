@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Dougiamas.com: PhotoFrame Installation</title>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="MSSmartTagsPreventParsing" content="TRUE">
+
+<link rel="stylesheet" href="Dougiamas.com%20%20PhotoFrame%20Installation_files/styles.css">
+<script language="JavaScript" type="text/javascript">
+<!--
+
+function openpopup(url,name,height,width) {
+    fullurl = "http://dougiamas.com" + url;
+    options = "menubar=0,location=0,scrollbars,resizable,width="+width+",height="+height;
+    windowobj = window.open(fullurl,name, options);
+    windowobj.focus();
+}
+
+// -->
+</script></head><body background="Dougiamas.com%20%20PhotoFrame%20Installation_files/Planning-And-Probing-3.jpg" bgcolor="#333333" link="#333333" text="#777777" vlink="#000000">
+<img alt="" src="Dougiamas.com%20%20PhotoFrame%20Installation_files/null.htm" align="right" height="2" width="2"><br>
+
+<center>
+<table align="center" border="0" cellpadding="10" cellspacing="0" width="90%">
+
+<tbody><tr align="left" bgcolor="#ffffff" valign="middle">
+<td bgcolor="#ffffff">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td width="48"><a href="http://dougiamas.com/" title="Back to my home page" target="_top"><img src="Dougiamas.com%20%20PhotoFrame%20Installation_files/smallbrain.jpg" border="0" height="45" width="46"></a></td>
+     <td width="20">&nbsp;&nbsp; 
+    </td>
+   <td background="Dougiamas.com%20%20PhotoFrame%20Installation_files/smallline.gif" nowrap="nowrap" width="100%"> 
+      <div align="left"><a class="Anoline" href="http://dougiamas.com/">Dougiamas</a> 
+       &gt; <a class="Anoline" href="http://dougiamas.com/software/">Software</a> &gt; <a class="Anoline" href="http://photoframe.sourceforge.net/">PhotoFrame</a> &gt; Installation</div>
+    </td>
+  </tr>
+</tbody></table>
+
+<h3 align="center">Installation</h3>
+
+ <table border="0" cellpadding="20" cellspacing="0" width="100%">
+ <tbody><tr>
+ <td nowrap="nowrap" valign="top" width="10%">
+ <p>
+<a href="http://photoframe.sourceforge.net/?page=intro">PhotoFrame</a><br>
+
+
+<a href="http://photoframe.sourceforge.net/?page=examples">Examples</a><br>
+
+
+Installation<br>
+
+
+<a href="http://photoframe.sourceforge.net/?page=download">Download</a><br>
+
+<a href="http://photoframe.sourceforge.net/?page=feedback">Feedback</a><br>
+
+<a href="http://photoframe.sourceforge.net/?page=history">History</a><br>
+
+<a href="http://sourceforge.net/forum/?group_id=57033">Forums</a><br>
+
+
+</p>
+<p>
+<br>
+Hosted by<br><a href="http://sourceforge.net/"><img valign="MIDDLE" src="Dougiamas.com%20%20PhotoFrame%20Installation_files/sflogo.png" border="0" height="31" width="88"></a>
+</p>
+
+<br>
+<script type="text/javascript"><!--
+google_ad_client = "pub-5915330482974934";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_color_border = "000000";
+google_color_bg = "F0F0F0";
+google_color_link = "000011";
+google_color_url = "008000";
+google_color_text = "000000";
+
+//--></script>
+<script type="text/javascript" src="Dougiamas.com%20%20PhotoFrame%20Installation_files/show_ads.js">
+    </script><iframe name="google_ads_frame" src="Dougiamas.com%20%20PhotoFrame%20Installation_files/ads.htm" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" frameborder="0" height="600" scrolling="no" width="120"></iframe> </td>
+ <td valign="top" width="90%">
+ <table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tbody><tr><th>Requirements
+</th></tr></tbody></table>
+<p>Firstly, you need a web server with <a href="http://www.php.net/">PHP</a> 4.x installed.</p>
+<p>Secondly, you need something to manipulate the images on the server ... either Imagemagick or GD:</p>
+<blockquote>
+<dl>
+<dt><a href="http://www.imagemagick.org/">Imagemagick 5.3</a> (or later version)<br>
+</dt><dd>This is a huge collection of programs for manipulating images, available for nearly every platform.
+The only two programs useful for Photo Frame are <a href="http://www.imagemagick.org/www/convert.html">convert</a> (to resize images) and <a href="http://www.imagemagick.org/www/identify.html">identify</a> (to extract JPEG comments and find out the dimensions of an image).
+<br><br>
+<b>OR</b>
+<br><br>
+</dd><dt><a href="http://www.boutell.com/gd/">The GD library</a>
+</dt><dd>As well as having this library installed on your system, it
+needs to be compiled into PHP. The compilation options for PHP looks
+something like <b>configure --with-gd --with-jpeg ...</b>  
+<p>
+There are two main flavours of the GD, the old version 1.x series and
+the newer version 2.x series - I'll refer to these as gd1 and gd2.
+The easiest way to see what version you have and to see if PHP has been
+compiled properly is to create a small file (eg test.php) containing:</p><blockquote>
+&lt;? phpinfo() ?&gt;
+</blockquote>
+and look at it using a web browser.
+</dd></dl>
+</blockquote>
+
+<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tbody><tr><th>Configuration
+</th></tr></tbody></table>
+
+<p>
+If your image programs are all set up correctly, the configuration can be as simple as 
+saving the Photoframe script as index.php into a directory full of images.
+
+</p><p>Usually, though, you'll want to change some of the settings.
+
+</p><p>The settings are all in a section up near the top of the script.  If you 
+   edit the script with a text editor, you can just change them there.</p>
+
+<p>A better approach is to copy the whole config section and save it as a 
+   separate file in the same directory called "config.php" (make sure that 
+   you include &lt;?PHP and ?&gt; tags surrounding the text).  This approach
+   is better because it means you can update the main script to a new version
+   and keep your settings.
+
+</p><p>Another good trick (on Unix systems) is to use a single copy of the script
+   to make photo albums in many different directories.  Each directory just 
+   contains a config.php file, and a symbolic link called index.php that 
+   points to the actual script (BSD and perhaps some other systems require
+   a hard link instead).  Later, you can update one file on your 
+   system and all the photo albums will be updated (and they can all have 
+   different configurations).
+</p><p>For example, say you have one directory called aaa that contains 
+   two collections of photos in subdirectories bbb and ccc.  You can 
+   put the photoframe script in aaa, and call it anything you want - 
+   let's say photoframe.php.  Now, go into the bbb directory and create
+   a link as follows:
+   </p><pre>      cd bbb
+      ln -s ../photoframe.php index.php
+   </pre>
+
+   Do the same for the the other subdirectory:
+   <pre>      cd ../ccc
+      ln -s ../photoframe.php index.php
+   </pre>
+
+   To make each of these two albums behave differently, or even to just 
+   have different titles etc, you can create a config.php file in each 
+   of the two directories, and add intro.html files etc as needed.  The 
+   nice thing is that if you update photoframe.php, then BOTH albums
+   will automatically start using the new code (and default settings).
+
+
+<p>Most of the config settings should be fairly self-explanatory.  If they aren't,
+   let me know and I'll add more documentation here.
+
+</p><p>Two important settings that I will cover now are the ones that cover image 
+   resizing and image captions:
+
+</p><dl>
+<dt>$imagemethod = ""; 
+</dt><dd>This setting defines the method Photo Frame will use to create new thumbnails
+    and to resize large images.
+    <ul>
+    <li>gd1  - the built-in PHP functions for GD version 1.* will be used.
+    </li><li>gd2  - the built-in PHP functions for GD version 2.* will be used.  These functions are higher
+quality than gd1, but sometimes PHP hosting companies don't have it installed.  The reason the choice
+here is manual is that recent versions of PHP make the functions available EVEN IF GD 2.* ISN'T AVAILABLE.
+They just fail to work.  To check what you've got, use the  trick mentioned above.
+    </li><li>imagemagick - the Imagemagick programs will be used.  These are separate binaries on your system.  If you 
+        set this, then make sure you also set "$convert" and "$identify" variables to tell the script where 
+        these binaries are located.
+    </li><li>manual - in this case, Photo Frame just assumes the thumbnails already exist.   This options might be used
+        if you had created the thumbnails manually using another program (perhaps on another machine).
+    </li><li>none - the script won't even try to create thumbnails and will just print filenames.
+    </li></ul>
+    <br>
+    <br>
+
+</dd><dt>$captionmethod = ""; 
+</dt><dd>This setting defines the method Photo Frame will use to find captions for
+each image.  Note that web-based admin caption-editing will only work with
+rdjpgcom or capfile methods.
+    <ul>
+    <li>rdjpgcom
+- the binary program rdjpgcom will be used to extract comments from
+JPEG images (not GIF or PNG). This program is part of the standard JPEG
+library and will be available in most Unix distributions these days. If
+you set this make sure you also set the "$rdjpgcom" variable to tell
+the script where this program is located. </li><li>imagemagick - in this case the "identify" program will be used to
+    extract comments from JPEG images.  Remember to set the "$identify"
+    variable.  Note: web-based admin caption editing will be disabled.
+    </li><li>capfile - if you can't get the other two methods to work, or you are
+    dealing with non-JPEG images, use this.  Basically captions are stored as
+    little text files for each image. If your image is called <b>peanut.jpg</b>, 
+    then the cap file will be called <b>peanut.jpg.cap</b> and be located 
+    in the folder with the thumbnails (usually "thumb").  You can create these
+    text files manually if you like, or just use the web-based admin (it's
+    really easy).  A cool thing is that this type of caption can contain HTML!
+    </li><li>filename - the filename itself is printed as the caption
+    </li><li>none - no captions are used or printed.
+    </li></ul>
+
+</dd></dl>
+
+<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tbody><tr><th>Admin mode
+</th></tr></tbody></table>
+<p>Since version 6.0, PhotoFrame has an admin mode which allows you to authenticate via the web and 
+manage your album.  You can upload new files, delete files, moderate new
+comments, delete comments and edit image captions.  Set the admin password using the 
+$password variable (otherwise it won't work), and login in via the admin link 
+under the thumbnails.  PhotoFrame uses a cookie to store your admin access, so
+that you won't have to log in again if you use the same computer.</p>
+   
+<p>Have fun and let me know how you go.</p>
+
+<br>
+<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tbody><tr><th>Notes and common problems
+</th></tr></tbody></table>
+
+<p>To make sure the thumbnails
+      get created, make sure the directory allows write permissions to the web
+      server user (usually <b>nobody</b>).  Photoframe will attempt to set this
+      up itself anyway.  If you then have trouble deleting the thumb directory,
+      use the <a href="http://photoframe.sourceforge.net/delete.source">delete.php</a> script on the <a href="http://photoframe.sourceforge.net/?page=download">download page</a>.
+
+</p><p>If you change the margin
+      width, you may have to recreate the thumbnails. Just delete the old ones
+      and this will happen automatically on the next view.
+
+</p><p>I recommend you save
+        the script as "index.php" in your directory. That way you can
+        just advertise your URL as http://yoursite.com/yourdirectory/
+ </p></td>
+ </tr>
+ </tbody></table>
+
+</td>
+</tr>
+</tbody></table>
+<p><font color="#ffffff" size="-1">
+Last modified: Wednesday, 13-Nov-2002 23:10:24 PST
+</font></p>
+</center>
+
+
+</body></html>
