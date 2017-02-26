@@ -1,0 +1,315 @@
+/* External Cascade Style Sheet used for NMC Courses */
+/* Author: Robert M. Laurie                          */
+/*---------------------------------------------------*/
+
+body { 
+	color: #333333;
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF url(wpLines1.gif) repeat;
+  background-attachment: scroll;
+}
+
+/* Following is a hack for IE 6 and earlier browsers. 
+   I use the hack to take care of the issue that 
+   IE does not support the CSS property position 
+   with value fixed.
+	 * html is a selector that only IE <= version 6 uses.
+*/
+* html body {
+  background: #FFFFFF url(wpNMC.gif) repeat-y;
+}
+
+/* Content - Box Model  */
+#dvContent { 
+	position: absolute; 
+	top: 0; 
+	left: 150px; 
+	width: 500px;
+	z-index: 10;
+}
+
+#dvContent a {
+	text-decoration: none;
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-weight: 700;
+}
+#dvContent a:link {text-decoration:none; color:#0033CC; background-color: #FFFFFF;}
+#dvContent a:visited {text-decoration:none; color:#9900CC; background-color: #FFFFFF;}
+#dvContent a:active {text-decoration:underline; color:#FF0000; background-color: #FFFFCC;}
+#dvContent a:hover {text-decoration:underline; color:#CC3333; background-color:#FFFFCC;}
+
+#logo {
+	position: absolute; 
+	top: 40px;
+	left: 400px;
+}
+
+#textbook{
+	display: inline;
+	float: right;
+	width:100px;
+	height: 140px;
+}
+
+#adobe a {
+	display:inline;
+	width: 88px; 
+	height: 31px; 
+	float: right;
+	margin-left: 20px;
+	background: #FFFFFF url("../btAcrobat.gif") no-repeat;
+	border: 3px solid #FFFFFF;
+}
+#adobe a:hover{ border: 3px outset #CCCC99 }
+#adobe a:active { border: 3px outset #FF9933 }
+
+#validator a {
+	display: block;
+	margin: 10pt 0 0 0;
+	width: 88px; 
+	height: 31px;
+	float: right;
+	background: #FFFFFF url("../xhtml10_Check.gif") no-repeat;
+	border: 3px solid #FFFFFF;
+}
+#validator a:hover{ border: 3px outset #CCCC99 }
+#validator a:active { border: 3px outset #FF9933 }
+
+a.rolloverImage img{	
+	border: 3px	solid #FFFFFF; 
+  float: right; 
+}
+a.rolloverImage:hover img{ border: 3px outset #CCCC99 }
+a.rolloverImage:active img{ border: 3px outset #FF9933 }
+
+/* Element Redefinition Specifications */
+p {	
+	font: 500 medium "Georgia", "Times New Roman", "Times", serif;
+	margin-top: 0.5em; 
+	margin-bottom: 0.5em; 
+	margin-left: 2em;
+	color: #000000;
+}
+
+.justify {
+	text-align:justify;
+}
+
+
+h1 {
+	width: 400px; 
+	margin-top: 1.5em; 
+	margin-bottom: 1em; 
+	color: #990000; 
+	font: 700 xx-large "Verdana", "Arial", "Helvetica", sans-serif; 
+	text-align: center; 
+}
+
+h2 {	 
+	width: 400px; 
+	margin-top: 0.8em; 
+	margin-bottom: 1em; 
+	color: #990000; 
+	font: 700 x-large "Verdana", "Arial", "Helvetica", sans-serif; 
+	letter-spacing: 0.5px; 
+	text-align: center;
+}
+
+h3 { 
+	width: 300px; 
+	margin-top: 0.8em; 
+	margin-bottom: 0.5em; 
+	font: 700 large "Verdana", "Arial", "Helvetica", sans-serif; 
+	color: #993333;
+}
+
+h4 { 
+	margin-top: 0.5em; 
+	margin-bottom:0; 
+	margin-left:1em; 
+	font: italic 700 medium "Arial", "Helvetica", sans-serif; 
+	color: #990000;
+}
+
+h5 { 
+	margin-top: 0.5em; 
+	margin-bottom:0; 
+	margin-left:1em; 
+	font: normal 600 small "Arial", "Helvetica", sans-serif; 
+	color:#990000;
+}
+
+h6 { 
+	margin-top: 0.5em; 
+	margin-bottom:0; 
+	margin-left:1em; 
+	font: normal 700  x-small "Arial", "Helvetica", sans-serif; 
+	color:#660000;
+}
+
+ul {
+	margin-top: 0; 
+	margin-bottom: 1em; 
+	font: medium "Georgia", "Times New Roman", "Times", serif;
+}
+
+ul li {
+	margin-top: 0;
+	margin-bottom: 0.25em;
+	list-style-image: url(bltDiamond.gif); 
+	list-style-position: outside; 
+}
+ul li a:hover {
+	text-decoration:underline; 
+  color:#CC0000;
+	list-style-image:url(bltDiamondV.gif); 
+  list-style-position:outside;
+}
+
+.small {
+	font-size:80%; 
+	line-height:100%;
+}
+
+#copyright {
+	text-align: right;
+	display: block;
+	clear: both;
+	font: italic small "Times New Roman", "Times", serif;  
+	margin: 0 0 10pt 0;
+}
+
+#rolloverTopRelative a {
+	position: relative;
+	display: block;
+	height: 50px;
+	width: 50px;
+	top: -80px;
+	left: -110px;
+	background: #990000 url("btTop.gif") no-repeat;
+}
+#rolloverTopRelative a:hover { background-position: 0 -50px;}
+#rolloverTopRelative a:active { background-position: 0 -100px; }
+
+.reading {
+	float:right; 
+	color:#990000; 
+	font: 500 1em  "Georgia", "Times New Roman", "Times", serif;
+}
+
+p.justify {
+	text-align:justify
+}
+
+p.note {
+	font: 400 0.8em/1em "Georgia", "Times New Roman", "Times", serif;
+	margin-left: 4em;
+}
+
+p.exam {
+	color:#990000; 
+	font: 800 1em "Verdana", "Arial", "Helvetica", sans-serif;
+	margin-bottom: 15px;
+}
+
+ul {
+	margin-top: 5px; 
+	margin-bottom: 10px; 
+	font: 1em/1.1em "Georgia", "Times New Roman", "Times", serif;
+}
+
+ul li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 20px; 
+	width: 500px;
+	list-style-image: url(bltDiamond.gif); 
+	list-style-position: outside; 
+}
+ul li a:hover {
+	text-decoration:underline; 
+  color:#CC0000;
+	list-style-image:url(bltDiamondV.gif); 
+  list-style-position:outside;
+}
+
+.blink {
+	text-decoration: blink;
+}
+
+.solution {
+	font-size: 80%;	 
+}
+
+.menu {
+	background-color: #ffff99;
+	border-bottom: #999900 solid 2px;
+}
+/* Navigation Bar - Box Model  */
+#dvNavMenu {
+	position: fixed;
+	background: #FFFF3F url(wpNMCMenu.gif) repeat-y;
+  top: 0; /* If only one value given applies to all 4 sides  */
+  left: 0; /* If only one value given applies to all 4 sides  */
+  width: 130px;
+	height: 100%;
+	z-index: 20;
+}
+
+#rolloverHome a {
+	display:block;
+	height: 50px;
+	width: 50px;
+	margin: 40px 0 0 40px;
+	background: #990000 url("btHome.gif") no-repeat;
+}
+#rolloverHome a:hover { background-position: 0 -51px;}
+#rolloverHome a:active { background-position: 0 -102px; }
+
+#rolloverBack a {
+	display:block;
+	height: 50px;
+	width: 50px;
+	margin: 40px 0 0 40px;
+	background: #990000 url("btBack.gif") no-repeat;
+}
+#rolloverBack a:hover { background-position: -50px 0;}
+#rolloverBack a:active { background-position: -100px 0; }
+
+#rolloverTop a {
+	display: block;
+	height: 50px;
+	width: 50px;
+	margin: 25px 0 0 40px;
+	background: #990000 url("btTop.gif") no-repeat;
+}
+#rolloverTop a:hover { background-position: 0 -50px;}
+#rolloverTop a:active { background-position: 0 -100px; }
+/* IE Hack to turn off menu top button*/
+* html #rolloverTop a { display: none; } 
+
+#dvNavMenu h5 { 
+	margin: 25px 10px 0 10px;
+	text-align:center;
+	font: italic 700 16px/20px "Arial", "Helvetica", sans-serif; 
+	color:#CCCC66;
+}
+
+.navButton a {
+	display:block;
+	height: 32px;
+	width: 100px;
+	margin: 16px 15px 0 15px;
+	font:800 14px/32px Arial, Helvetica, sans-serif;
+	color:#CCCC33; 
+	background: #990000 url("btLinks.gif") no-repeat;
+	text-align:center;
+	vertical-align: middle;
+	text-decoration: none; 
+}
+.navButton a:hover { background-position: 0 -32px; color:#FFFF33;}
+.navButton a:active { color:#FFFF00;}
+
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Test Scores using Arrays</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <script type="text/javascript">
+          var I, Min=100, ExamMin, Sum = 0, Percent, Grade;
+          var Score = new Array(5);
+          for(I = 0; I < 4; I++)
+            Score[I] = parseFloat(window.prompt("Enter Exam "+(I+1)+" Score","0"));
+          Score[4] = parseFloat(window.prompt("Enter Final Exam Score","0"));
+         for(I = 0; I < 4; I++)
+          {
+            if(Score[I] < Min)
+            {
+              Min = Score[I];
+              ExamMin = I;
+            }
+          }
+          document.writeln("<h2>CS201 Exam Scores</h2><p>");
+          for(I = 0; I < 4; I++)
+          {
+            if(I == ExamMin)document.writeln("<del>");
+            document.writeln("Score "+(I+1)+" = "+Score[I]+"<br \>");
+            if(I == ExamMin)document.writeln("</del>");
+            else Sum += Score[I];
+          }
+          document.writeln("Final Exam = "+Score[4]+"<br />"
+                           +"----------------------<br />");
+          Sum += Score[4];
+          Percent = (Sum/250)*100;
+          document.writeln("<h3>Total = "+Sum+"</h3>");
+          document.writeln("<h3>Percentage = "+Percent+"</h3>");
+          document.writeln("<h2>Grade = ");
+          if(Percent >= 90)Grade = "A";
+          else if(Percent >=80)Grade = "B";
+          else if(Percent >=70)Grade = "C";
+          else if(Percent >=60)Grade = "D";
+          elseGrade = "F";
+          document.writeln(Grade+"</h2><p><i>Robert Laurie</i></p>");
+     </script>
+  </head>
+  <body>
+  </body>
+</html>

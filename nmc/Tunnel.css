@@ -1,0 +1,108 @@
+/* External Cascade Style Sheet used for Tunnel */
+/* Author: Robert M. Laurie                          */
+/*---------------------------------------------------*/
+body { 
+
+	font-family:"Verdana","Arial","Helvetica",sans-serif
+	color: #FFFFFF;
+	background: #666666 
+	text-align: center; 
+
+}
+
+
+#btLeft a {
+	position: static;
+	display:block;
+	height: 24px;
+	width: 40px;
+	margin-top: 30px;
+	margin-left:25px;
+	margin-bottom: 30px;
+	background: #990000 url("btLeftRed.gif") no-repeat;
+	text-decoration: none;
+}
+#btLeft a:hover { background-position: 0 -24px;}
+
+#btRight a {
+	position: static;
+	display:block;
+	height: 24px;
+	width: 40px;
+	margin-top: 30px;
+	margin-left:25px;
+	margin-bottom: 30px;
+	background: #990000 url("btRightRed.gif") no-repeat;
+	text-decoration: none;
+}
+#btRight a:hover { background-position: 0 -24px;}
+
+
+
+
+/* Element Redefinition Specifications */
+
+p {	
+	font: 500 100%/1.1em "Georgia", "Times New Roman", "Times", serif;
+	margin-left: 32px;
+	margin-top: 0; 
+	margin-bottom: 12px; 
+	text-align: center; 
+}
+
+h1 {
+	width: 440px; 
+	margin-top: 80px; 
+	margin-bottom: 40px; 
+	color: #CCCCCC; 
+	font: 800 42px/52px "Verdana", "Arial", "Helvetica", sans-serif; 
+	letter-spacing: 8px; 
+	text-align: center; 
+}
+
+h2 {	 
+	width: 440px; 
+	margin-top: 10px; 
+	margin-bottom: 28px; 
+	color: #990000; 
+	font: 800 28px/32px "Arial", "Helvetica", sans-serif; 
+	letter-spacing: 1px; 
+	text-align: center;
+	/*filter:   dropShadow( Color=#CCCCCC, OffX=2, OffY=2, Positive=2); */
+}
+
+h3 { 
+	width: 300px; 
+	margin-top: 18px; 
+	margin-bottom:8px; 
+	font: italic 700 1.3em "Arial", "Helvetica", sans-serif; 
+	color: #993333;
+	letter-spacing: 2px;
+}
+
+h4 { 
+	margin-top: 12px; 
+	margin-bottom:8px; 
+	margin-left:18px; 
+	font: italic 500 1.1em "Arial", "Helvetica", sans-serif; 
+	color: #FFFFFF;
+	letter-spacing: 1px;
+}
+
+h5 { 
+	margin-top: 8px; 
+	margin-bottom:2px; 
+	margin-left:20px; 
+	font: normal 600 1.1em "Arial", "Helvetica", sans-serif; 
+	color:#FFFF00;
+	text-align:center;
+}
+
+h6 { 
+	margin-top: 6px; 
+	margin-bottom:24px; 
+	margin-left:20px; 
+	font: normal 600 1.0em "Arial", "Helvetica", sans-serif; 
+	color:#660000;
+}
+

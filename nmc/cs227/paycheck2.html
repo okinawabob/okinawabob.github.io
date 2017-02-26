@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Payroll Program</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <style type="text/css">
+      caption
+      {
+        border: 1px ridge #9999CC;
+        color:#CCFFFF;
+        background-color:#000099;
+        font: 800 15pt "Verdana";
+      }
+      table
+      {
+        text-align: right;
+        color:#000066;
+        background-color: #CCFFFF;
+        font: 700 12pt "Lucida Console";
+        border: 4px ridge #9999CC;
+        border-spacing: 4px;
+        padding: 8px;
+      }
+    </style>
+    <script type="text/javascript">
+
+      function Money(Amt, Size)
+      {
+        var Dollars, Digit, Cents, Flag=false, $Output="$";
+        Amt = Math.round(Amt * 100);
+        Cents = Amt % 100;
+        Dollars = Amt / 100;
+        for(i=Size-1; i > 0; i--)
+        {
+          Digit = Math.floor(Dollars / Math.pow(10,i));
+          Dollars %= Math.pow(10,i);
+          if(Digit == 0 && Flag==false) Digit="&nbsp;";
+          else Flag=true;
+          $Output += Digit;
+        }
+        $Output += ".";
+        if(Cents < 10) $Output += "0"
+        $Output += Cents;
+        return($Output);
+      }
+
+      var Name, PayRate, Hours, Tax, GrossAmt, OTPay, PayCheck;
+      Name = window.prompt("Enter your name:", "");
+      PayRate = parseFloat(window.prompt("Enter your hourly pay rate:", ""));
+      Hours = parseFloat(window.prompt("Enter your hours worked:", ""));
+      GrossAmt = PayRate * Hours;
+      if(Hours > 40)
+      {
+        OTPay = PayRate * 0.5 * (Hours - 40);
+        GrossAmt = GrossAmt + OTPay;
+      }
+      Tax = GrossAmt * 0.15;
+      PayCheck = GrossAmt - Tax;
+      document.writeln("<table>"
+        + "<caption>Pay Check for <br />" + Name + "</caption>"
+        + "<tr><td>Gross Amount = </td><td>" + Money(GrossAmt, 6) + "</td></tr>"
+        + "<tr><td>Tax = </td><td>" + Money(Tax, 6) + "</td></tr>"
+        + "<tr><td>Pay Check Amount = </td><td>" + Money(PayCheck, 6) + "</td></tr>"
+        + "</table>");
+    </script>
+  </head>
+  <body>
+    <p>
+
+    </p>
+  </body>
+</html>

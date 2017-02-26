@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Powers of a Base</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+    <script type="text/javascript">
+      var Base, Exponent, Count, Prod;
+      Base = parseInt(window.prompt("Enter the Number Base:", ""));
+      MaxExp = parseInt(window.prompt("Enter the Maximum Exponent:", ""));
+      document.writeln("<h2>Base " + Base + " carried to " + MaxExp + " powers are:</h2>");
+      for(Count=0; Count<=MaxExp; Count++)
+      {
+        if(Count==0)
+          Prod=1;
+        else
+          Prod*=Base;
+        document.writeln("<p>"+Base+"<sup>"+Count+"</sup> = "+Prod+"</p>");
+      }
+    </script>
+  </head>
+  <body>
+    <p>
+      Click Refresh to Run Again
+    </p>
+  </body>
+</html>

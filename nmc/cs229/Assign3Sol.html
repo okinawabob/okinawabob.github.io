@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+  <title>Assignment 3</title>
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+.TPtext { color: #000000; background-color: #FFFFFF; font-family:"Lucida Console","Courier New","Courier",monospace; font-weight:700; }
+.TPkeyword1 { color: #0000FF; background-color: #FFFFFF; }
+.TPkeyword2 { color: #000080; background-color: #FFFFFF; }
+.TPcomment { color: #008000; background-color: #FFFFFF; }
+.TPnumber { color: #000000; background-color: #FFFFFF; }
+.TPstring { color: #008080; background-color: #FFFFFF; }
+.TPbracket { color: #FF0000; background-color: #FFFFFF; }
+.TPoperator { color: #000000; background-color: #FFFFFF; }
+-->
+/*]]>*/
+</style>
+</head>
+
+<body class="TPtext">
+  <pre>
+<span class="TPcomment">/* Show Address Box Version 1
+ * Author: Robert Laurie
+ * Date: 15 February 2006
+ * ------------------------------------
+ * Description: p40 #3
+ */</span>
+<span class="TPkeyword1">import </span>javax.swing.<span class=
+"TPoperator">*</span>;
+<span class="TPkeyword1">public class </span>ShowAddressBox1
+<span class="TPbracket">{</span>
+  <span class="TPkeyword1">public static void </span>main<span class=
+"TPbracket">(</span><span class="TPkeyword2">String</span><span class=
+"TPbracket">[] </span>args<span class="TPbracket">)</span>
+  <span class="TPbracket">{</span>
+    JOptionPane.showMessageDialog<span class="TPbracket">(</span><span class=
+"TPkeyword1">null</span>,<span class=
+"TPstring">&quot;Robert Laurie&quot;</span>
+       <span class="TPoperator">+</span><span class=
+"TPstring">&quot;\n141 Main Street\nSaipan, MP  96950&quot;</span><span class=
+"TPbracket">)</span>;
+    <span class="TPkeyword2">System</span>.exit<span class=
+"TPbracket">(</span><span class="TPnumber">0</span><span class=
+"TPbracket">)</span>;
+  <span class="TPbracket">}</span>
+<span class="TPbracket">}</span>
+</pre>
+  <hr />
+  <pre>
+<span class="TPcomment">/* Show Address Box Version 2
+ * Author: Robert Laurie
+ * Date: 15 February 2006
+ * ------------------------------------
+ * Description: p40 #3
+ */</span>
+<span class="TPkeyword1">import </span>javax.swing.<span class=
+"TPoperator">*</span>;
+<span class="TPkeyword1">public class </span>ShowAddressBox2
+<span class="TPbracket">{</span>
+ <span class="TPcomment">// Class data declaration section</span>
+  <span class="TPkeyword1">private </span><span class=
+"TPkeyword2">String </span>sMessage;
+  <span class="TPkeyword1">private </span><span class=
+"TPkeyword2">String </span>sTitle;
+
+  <span class="TPcomment">//Class method definition section</span>
+  ShowAddressBox2<span class="TPbracket">() </span><span class=
+"TPcomment">// Constructor Method</span>
+  <span class="TPbracket">{</span>
+    sMessage <span class="TPoperator">= </span><span class=
+"TPstring">&quot;Robert Laurie\n141 Main Street\nSaipan, MP  96950&quot;</span>;
+    sTitle <span class="TPoperator">= </span><span class=
+"TPstring">&quot;Address Information&quot;</span>;
+  <span class="TPbracket">}</span>
+
+  <span class="TPkeyword1">public void </span>displayDialogBox<span class=
+"TPbracket">()</span>
+  <span class="TPbracket">{</span>
+    JOptionPane.showMessageDialog<span class="TPbracket">(</span><span class=
+"TPkeyword1">null</span>,sMessage, sTitle, JOptionPane.INFORMATION_MESSAGE<span class="TPbracket">)</span>;
+  <span class="TPbracket">}</span>
+
+  <span class="TPkeyword1">public static void </span>main<span class=
+"TPbracket">(</span><span class="TPkeyword2">String</span><span class=
+"TPbracket">[] </span>args<span class="TPbracket">)</span>
+  <span class="TPbracket">{</span>
+      ShowAddressBox2 oAddressMe;
+      oAddressMe <span class="TPoperator">= </span><span class=
+"TPkeyword1">new </span>ShowAddressBox2<span class="TPbracket">()</span>;
+      oAddressMe.displayDialogBox<span class="TPbracket">()</span>;
+      <span class="TPkeyword2">System</span>.exit<span class=
+"TPbracket">(</span><span class="TPnumber">0</span><span class=
+"TPbracket">)</span>;
+  <span class="TPbracket">}</span>
+<span class="TPbracket">}</span>
+</pre>
+  <hr />
+  <pre>
+<span class="TPcomment">/* Show Parts Box Version 1
+ * Author: Robert Laurie
+ * Date: 15 February 2006
+ * ------------------------------------
+ * Description: p40 #5
+ */</span>
+<span class="TPkeyword1">import </span>javax.swing.<span class=
+"TPoperator">*</span>;
+<span class="TPkeyword1">public class </span>ShowPartsBox1
+<span class="TPbracket">{</span>
+  <span class="TPkeyword1">public static void </span>main<span class=
+"TPbracket">(</span><span class="TPkeyword2">String</span><span class=
+"TPbracket">[] </span>args<span class="TPbracket">)</span>
+  <span class="TPbracket">{</span>
+    JOptionPane.showMessageDialog<span class="TPbracket">(</span><span class=
+"TPkeyword1">null</span>,
+      <span class="TPstring">&quot;PART NO.   PRICE\n&quot;</span>
+      <span class="TPoperator">+ </span><span class=
+"TPstring">&quot;T1267      $6.34\n&quot;</span>
+      <span class="TPoperator">+ </span><span class=
+"TPstring">&quot;T1300      $8.92&quot;</span>, <span class=
+"TPstring">&quot;Prices&quot;</span>,
+      JOptionPane.PLAIN_MESSAGE<span class="TPbracket">)</span>;
+    <span class="TPkeyword2">System</span>.exit<span class=
+"TPbracket">(</span><span class="TPnumber">0</span><span class=
+"TPbracket">)</span>;
+  <span class="TPbracket">}</span>
+<span class="TPbracket">}</span>
+</pre>
+  <hr />
+  <pre>
+<span class="TPcomment">/* Show Parts Box Version 2
+ * Author: Robert Laurie
+ * Date: 15 February 2006
+ * ------------------------------------
+ * Description: p40 #5
+ */</span>
+<span class="TPkeyword1">import </span>javax.swing.<span class=
+"TPoperator">*</span>;
+<span class="TPkeyword1">public class </span>ShowPartsBox2
+<span class="TPbracket">{</span>
+ <span class="TPcomment">// Class data declaration section</span>
+  <span class="TPkeyword1">private </span><span class=
+"TPkeyword2">String </span>sMessage;
+  <span class="TPkeyword1">private </span><span class=
+"TPkeyword2">String </span>sTitle;
+
+  <span class="TPcomment">//Class method definition section</span>
+  ShowPartsBox2<span class="TPbracket">() </span><span class=
+"TPcomment">// Constructor Method</span>
+  <span class="TPbracket">{</span>
+    sMessage <span class="TPoperator">= </span><span class=
+"TPstring">&quot;Part No.    Price\n&quot;</span>
+             <span class="TPoperator">+ </span><span class=
+"TPstring">&quot;T1267       $6.34\n&quot;</span>
+             <span class="TPoperator">+ </span><span class=
+"TPstring">&quot;T1300       $8.92&quot;</span>;
+    sTitle <span class="TPoperator">= </span><span class=
+"TPstring">&quot;Parts Price&quot;</span>;
+  <span class="TPbracket">}</span>
+
+  <span class="TPkeyword1">public void </span>displayDialogBox<span class=
+"TPbracket">()</span>
+  <span class="TPbracket">{</span>
+    JOptionPane.showMessageDialog<span class="TPbracket">(</span><span class=
+"TPkeyword1">null</span>,sMessage, sTitle, JOptionPane.PLAIN_MESSAGE<span class="TPbracket">)</span>;
+  <span class="TPbracket">}</span>
+
+  <span class="TPkeyword1">public static void </span>main<span class=
+"TPbracket">(</span><span class="TPkeyword2">String</span><span class=
+"TPbracket">[] </span>args<span class="TPbracket">)</span>
+  <span class="TPbracket">{</span>
+      ShowPartsBox2 oParts;
+      oParts <span class="TPoperator">= </span><span class=
+"TPkeyword1">new </span>ShowPartsBox2<span class="TPbracket">()</span>;
+      oParts.displayDialogBox<span class="TPbracket">()</span>;
+      <span class="TPkeyword2">System</span>.exit<span class=
+"TPbracket">(</span><span class="TPnumber">0</span><span class=
+"TPbracket">)</span>;
+  <span class="TPbracket">}</span>
+<span class="TPbracket">}</span>
+</pre>
+  <hr />
+  <pre>
+<span class="TPcomment">/* Code Rewrite for TestIt
+ * Author: Robert Laurie
+ * Date: 15 February 2006
+ * ------------------------------------
+ * Description: p43 #2c
+ */</span>
+<span class="TPkeyword1">public class </span>TestIt2c
+<span class="TPbracket">{</span>
+  <span class="TPkeyword1">public static void </span>main<span class=
+"TPbracket">(</span><span class="TPkeyword2">String</span><span class=
+"TPbracket">[] </span>args<span class="TPbracket">)</span>
+  <span class="TPbracket">{</span>
+    <span class="TPkeyword2">System</span>.out.print<span class=
+"TPbracket">(</span><span class=
+"TPstring">&quot;Reading a program&quot;</span><span class=
+"TPbracket">)</span>;
+    <span class="TPkeyword2">System</span>.out.println<span class=
+"TPbracket">(</span><span class=
+"TPstring">&quot; is much easier&quot;</span><span class="TPbracket">)</span>;
+    <span class="TPkeyword2">System</span>.out.println<span class=
+"TPbracket">(</span><span class=
+"TPstring">&quot;if a standard form for main is used&quot;</span><span class=
+"TPbracket">)</span>;
+    <span class="TPkeyword2">System</span>.out.print<span class=
+"TPbracket">(</span><span class=
+"TPstring">&quot;and each statement is written&quot;</span><span class=
+"TPbracket">)</span>;
+    <span class="TPkeyword2">System</span>.out.println<span class=
+"TPbracket">(</span><span class=
+"TPstring">&quot; on a line by itself.&quot;</span><span class=
+"TPbracket">)</span>;
+  <span class="TPbracket">}</span>
+<span class="TPbracket">}</span>
+</pre>
+</body>
+</html>

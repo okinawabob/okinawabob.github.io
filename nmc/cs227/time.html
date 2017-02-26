@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Time Converter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <script type="text/javascript">
+      var Time24, $Time24, Hour, Minute, $Minute, AmPm, YorN;
+      do
+      {
+        $Time24 = window.prompt("Enter the 2400 time format:", "");
+        Time24 = parseInt($Time24);
+        Minute = Time24 % 100;
+        if(Minute < 10)
+          $Minute = "0" + Minute;
+        else
+          $Minute = Minute;
+
+        Hour = Math.floor(Time24 / 100);
+        if(Hour < 12)
+        {
+          AmPm="am";
+          if(Hour == 0)
+            Hour = 12;
+        }
+        else
+        {
+          AmPm="pm";
+          if(Hour > 12)
+            Hour -= 12;
+        }
+        document.writeln("<h3>"+$Time24+" = "+Hour+":"+$Minute+AmPm+"</h3>");
+        YorN = window.prompt("Would you like to enter another 2400 time? (y or n)","n");
+      }while(YorN == "y" || YorN == "y");
+      document.writeln("<h6>Program Exit</h6>");
+
+    </script>
+
+  </head>
+  <body>
+    <p>
+
+    </p>
+  </body>
+</html>

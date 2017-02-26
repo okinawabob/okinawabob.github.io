@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="author" content="Robert Laurie" />
+<meta name="copyright" content="&copy; 2003 Robert Laurie" />
+<meta name="keywords" content="xhtml, html, special, characters" />
+<meta name="description" content="HTML/XHTML Special Characters List" />
+<title>TextPad &raquo; Tidy Validator</title>
+<link rel="stylesheet" href="../uogHO.css" type="text/css" />
+
+<script language="JAVASCRIPT" type="TEXT/JAVASCRIPT">
+<!-- Hide script from old browsers
+    btBackV = new Image;
+    btBackV.src = "../btBackVWh.gif";
+    btBackN = new Image;
+    btBackN.src = "../btBackNTr.gif";
+  	btTopV = new Image;
+    btTopV.src = "../../btTopV.gif";
+    btTopN = new Image;
+    btTopN.src = "../../btTopN.gif";
+  // End hiding script from old browsers -->
+
+</script>
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<script type="text/javascript" language="JavaScript"
+src="../../lastmodified.js">
+</script>
+<a id="TOP" name="TOP"></a> 
+<table border="0" cellspacing="0" cellpadding="0" cols="4"
+width="600" align="center">
+  <tr> 
+    <td valign="top" width="81"><a
+href="index.html"
+onMouseOver="document.btBack.src=btBackV.src"
+onMouseOut="document.btBack.src=btBackN.src"><img name="btBack"
+border="0" src="../btBackNTr.gif" width="59" height="29" /></a></td>
+    <td align="center" valign="top" width="551"> 
+      <h1>Tidy Validator/Textpad<br>
+        Installation Instructions</h1>
+      </td>
+    <td align="right" valign="top" width="68">&nbsp;</td>
+  </tr>
+</table>
+<br>
+<table width="600" border="0" align="center">
+  <tr>
+    <td> 
+              
+      <p align="left">One of the most useful features of <a title="My look at TextPad" 
+href="http://www.textpad.com">TextPad</a> is the editor's ability to work with 
+        external tools. Several people have asked me how to set up TextPad to 
+        work with the <a title="Tidy home page" 
+href="http://tidy.sourceforge.net/">HTML Tidy Web</a> page checker. Here's how 
+        to do it: </p>
+        
+      <ol>
+        <li>Download the <a href="../../dnld/tidy.exe">Tidy HTML Validator Executable</a> 
+          file and install it to the TextPad program folder. 
+        <li>In TextPad, go to the <b>Configure</b> menu and choose <b>Preferences</b>. 
+        <li>On the left side of the <b>Preferences</b> dialog window, click <b>Tools</b>. 
+        <li>On the right side of the dialog, click Add and choose Program from 
+          the drop-down list that appears. 
+        <li>A file dialog appears. Find your HTML Tidy executable (for example, 
+          <tt>c:\Program&nbsp;Files\TextPad\tidy.exe</tt>) and click <b>Open</b>. 
+          <br>
+          You're returned to the Preferences dialog. 
+        <li>Click <b>Apply</b> on the Preferences dialog window. Tidy is now added 
+          to the list of tools. 
+        <li>On the left side of the Preferences dialog window, click the <b>+</b> 
+          sign by Tools and then click <b>Tidy</b>. 
+        <li>In the <b>Parameters</b> field of the Preferences dialog window, enter 
+          the Tidy command line parameters you use (for example, <tt>-muc</tt>) 
+          <strong>before</strong> <tt>$File</tt> (which appears in the Parameters 
+          field by default). Keep <tt>$File</tt> in the Parameters field because 
+          it tells HTML Tidy to check the document you're working on. For example: 
+      </ol>
+      <ol>
+        <li>
+          <p align="left"><tt>-mi -asxhtml --uppercase-tags no --uppercase-attributes 
+            no $File</tt> </p>
+        <li>
+          <div align="left">Select the Capture output option. This will display 
+            any messages from HTML Tidy in a new window. </div>
+        <li>
+          <div align="left">Click Apply and then click OK. </div>
+        </li>
+      </ol>
+      <p align="left">To use HTML Tidy, open an HTML file in TextPad and select 
+        Tidy from the Tools menu. A new window should open and list the messages 
+        from HTML Tidy. Close this window, and then click Yes on the dialog box 
+        that appears. </p>
+</td>
+  </tr>
+</table>
+<table border="0" cellspacing="0" cols="4" width="600"
+cellpadding="0" align="center">
+  <tr> 
+    <td valign="bottom" width="104"><a href="#TOP"
+onMouseOver="document.btTop.src=btTopV.src"
+onMouseOut="document.btTop.src=btTopN.src"><img name="btTop"
+border="0" src="../../btTopN.gif" width="43" height="29" /></a> </td>
+    <td width="36"> </td>
+    <td valign="bottom" colspan="2" width="560" align="right"> 
+      <p class="copy">&nbsp;</p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

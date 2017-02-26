@@ -1,0 +1,101 @@
+/* External Cascade Style Sheet used for Tunnel */
+/* Author: Robert M. Laurie                          */
+/*---------------------------------------------------*/
+body { 
+
+	font-family:"Verdana","Arial","Helvetica",sans-serif
+	color: #CCCCCC;
+	background-color: #000000; 
+	text-align: center; 
+
+}
+
+img.art { 
+	border-style:none;
+	top:0;
+	margin-left:10px;
+	float: right;
+	}
+#btLeft a {
+	position:absolute;
+	left:50%;
+	margin-left:-60px;	
+	height: 24px;
+	width: 40px;
+	background:url("btLeftRed.gif") no-repeat;
+}
+#btLeft a:hover { background-position: 0 -24px;}
+
+#btRight a {
+	position:absolute;
+	left:50%;
+	margin-left:40px;	
+	height: 24px;
+	width: 40px;
+	background: url("btRightRed.gif") no-repeat;
+}
+#btRight a:hover { background-position: 0 -24px;}
+
+
+
+
+/* Element Redefinition Specifications */
+
+p {	
+	font: 500 16pt/18pt "Georgia", "Times New Roman", "Times", serif;
+}
+
+h1 {
+	margin-top: 80px; 
+	margin-bottom: 40px; 
+	color: #CC9999; 
+	font: 800 28pt/32pt "Verdana", "Arial", "Helvetica", sans-serif; 
+	letter-spacing: 2px; 
+	text-align: center; 
+}
+
+h2 {	 
+	margin-top: 16pt; 
+	margin-bottom: 16pt; 
+	color: #339999; 
+	font: 800 24pt/28pt "Arial", "Helvetica", sans-serif; 
+	letter-spacing: 1px; 
+	text-align: center;
+}
+
+h3 { 
+	margin-top: 9pt; 
+	margin-bottom:9pt; 
+	font: italic 700 18pt/24pt "Arial", "Helvetica", sans-serif; 
+	color: #CCCC66;
+	left: 50%;
+	text-align:center;
+}
+
+h4 { 
+	margin-top: 12px; 
+	margin-bottom:8px; 
+	margin-left:18px; 
+	font: italic 500 1.1em "Arial", "Helvetica", sans-serif; 
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+h5 { 
+	margin-top: 8px; 
+	margin-bottom:2px; 
+	margin-left:20px; 
+	font: normal 600 1.1em "Arial", "Helvetica", sans-serif; 
+	color:#FFFF00;
+	text-align:center;
+}
+
+h6 { 
+	margin-top: 6px; 
+	margin-bottom:24px; 
+	margin-left:20px; 
+	font: normal 600 1.0em "Arial", "Helvetica", sans-serif; 
+	color:#660000;
+}
+
