@@ -1,0 +1,54 @@
+/* This style sheet created by Robert Laurie */
+
+BODY	{background-color:#FFFFCC; margin-top:10px; margin-left:40px; margin-right:40px; 
+	background-image:url(../wpWhiteCoursePaper.jpg);}
+BLOCKQUOTE { margin-top:0px;margin-bottom:0px; }
+
+P  {margin-top:6pt; margin-bottom:0pt;
+   font-size:12pt; line-height:14pt; 
+   font-family: "Georgia", "Times New Roman", "Times", serif;}
+
+OL { margin-top:4pt; margin-bottom:8pt; list-style-type:decimal;}
+UL { margin-top:4pt; margin-bottom:8pt; list-style-type:disc;}
+
+LI { font-family: "Georgia", "Times New Roman", "Times", serif; 
+	font-size:12pt; line-height:16pt;}
+
+SMALL   {font-size: 10pt; line-height: 12pt; 
+        font-family: "Georgia", "Times New Roman", "Times", serif;}
+
+A       {text-decoration: none; font-weight:700; 
+        font-family:Arial, Helvetica, sans-serif}
+A:link  {text-decoration:none; color: #CC0000;}
+A:visited {text-decoration:none; color: #330099;}
+A:active    {text-decoration:none; color: #FF0000;}
+A:hover {text-decoration:underline; color:#FF3300;}
+
+H1 {text-align:center; margin-top:20px;margin-bottom:20px;
+   font-weight:900; font-size:18pt; line-height:20pt; 
+   letter-spacing:2px; word-spacing:10px;font-variant:small-caps;
+   font-family: "Verdana", "Arial", "Helvetica", sans-serif}
+H2  {margin-top:20px; margin-bottom:4px; font-weight:700; text-transform:capitalize;
+   font-size:14pt; line-height:16pt; font-family:"Verdana", "Arial", "Helvetica", sans-serif}
+H3 {margin-top:10px; margin-bottom:0px; font-style:italic;  
+	font-weight:600; font-size: 13pt; line-height: 15pt; 
+	font-family: "Verdana", "Arial", "Helvetica", sans-serif}
+H4 {margin-top: 6px; margin-bottom:0px; font-style: italic; 
+	font-weight: 500; font-size: 13pt; line-height: 14pt; 
+	font-family: "Verdana", "Arial", "Helvetica", sans-serif}
+
+H5 {margin-top:6px; margin-bottom:2px; font-style:italic; font-weight:600; 
+   font-size:12pt; line-height:14pt; font-family: "Verdana", "Arial", "Helvetica", sans-serif}
+H6 {margin-top:4px; margin-bottom:2px; font-weight:600; width: 500px;
+   font-size:12pt; line-height:14pt; font-family:"Verdana", "Arial","Helvetica",sans-serif}
+
+PRE {margin-left:15px; margin-top:2px; margin-bottom:2px;  
+   font-size:10pt; line-height:12pt; font-weight:600; 
+   color:#000066; font-family:"Courier New","Courier",monospace}
+TH {font-weight:700; text-align:left; letter-spacing:1px;
+   font-family:"Verdana","Arial","Helvetica",sans-serif}
+
+SPAN.Keyword    {color:#0000CC; font-family:"Courier New","Courier",monospace} 
+SPAN.Identifier{font-style:italic; color:#009900;   font-family:"Courier New","Courier",monospace}
+SPAN.Operator   {color:#990000; font-family:"Courier New","Courier",monospace}
+SPAN.Property   {color:#660099; font-family:"Courier New","Courier",monospace}
