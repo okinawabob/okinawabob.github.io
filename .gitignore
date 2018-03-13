@@ -1,19 +1,26 @@
 
-# Created by https://www.gitignore.io/api/windows,osx,jekyll
+# Created by https://www.gitignore.io/api/osx,macos,jekyll,windows,java-web,libreoffice,microsoftoffice
+
+### Java-Web ###
+## ignoring target file
+target/
 
 ### Jekyll ###
 _site/
 .sass-cache/
 .jekyll-metadata
 
-### OSX ###
+### LibreOffice ###
+# LibreOffice locks
+.~lock.*#
+
+### macOS ###
 *.DS_Store
 .AppleDouble
 .LSOverride
 
 # Icon must end with two \r
 Icon
-
 
 # Thumbnails
 ._*
@@ -33,6 +40,34 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+### MicrosoftOffice ###
+*.tmp
+
+# Word temporary
+~$*.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+# PowerPoint temporary
+~$*.ppt*
+
+# Visio autosave temporary files
+*.~vsd*
+
+### OSX ###
+
+# Icon must end with two \r
+
+# Thumbnails
+
+# Files that might appear in the root of a volume
+
+# Directories potentially created on remote AFP share
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -55,4 +90,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/windows,osx,jekyll
+
+# End of https://www.gitignore.io/api/osx,macos,jekyll,windows,java-web,libreoffice,microsoftoffice
