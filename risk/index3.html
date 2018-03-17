@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+		<title>Risk Game &raquo; Dice Roller</title>
+		<link href="riskmain.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="riskfunctions.js"></script>
+  </head>
+  <body onload="sndCharge.play()">
+    <form id="frmRisk" action="#">
+      <div id="s1">
+      	<img src="SaluteSoldier.gif" align="left" alt="salute">
+            Risk Dice Roller
+         <img src="SaluteSoldier.gif" align="right" alt="salute">
+      </div>
+      <div class="horizRule"></div>
+      <div class="player">
+        <input type="button" id="btnStart" value="Attack" onclick="PlayRisk();">
+      	<span class="sa2">Attackers</span>
+      	<input type="text" id="txtAttack" size="3" maxlength="3" value="2" onChange="ChangeAttackers()">
+      	<span class="sa4">Stop Loss</span>
+      	<input type="text" id="txtStopLoss" size="2" maxlength="2" value="1" onChange="VerifyStopLoss()">
+      	<img src="die1r.gif" id="imgDieAtk0" class="dice" alt="die">
+      	<img src="die2r.gif" id="imgDieAtk1" class="dice" alt="die">
+      	<img src="die3r.gif" id="imgDieAtk2" class="dice" alt="die">
+      </div>
+      <div class="player">
+        <input type="button" id="btnHalt" value="Halt" onClick="window.clearTimeout(Timer1);">
+      	<span class="sd2">Defenders</span>
+      	<input type="text" id="txtDefend" size="3" maxlength="3" value="2" onChange="ChangeAttackers()">
+      	<span class="sd4">Delay</span>
+        <select id="optDelay" name="optDelay" size="1">
+         <option value="100">0.1 Sec.</option>
+         <option value="500">0.5 Sec.</option>
+         <option value="1000">1.0 Sec.</option>
+         <option value="2000">2.0 Sec.</option>
+         <option value="3000" selected>3.0 Sec.</option>
+         <option value="5000">5.0 Sec.</option>
+        </select>
+        <img src="die1b.gif" id="imgDieDef0" class="dice" alt="die">
+      	<img src="die2b.gif" id="imgDieDef1" class="dice" alt="die">
+      </div>
+      <div class="horizRule"></div>
+    </form>
+  </body>
+</html>

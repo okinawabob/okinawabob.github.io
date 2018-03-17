@@ -1,0 +1,143 @@
+body{
+	background-image: url("wpWar.jpg");
+	background-repeat: repeat;
+}
+
+p { 
+	margin-top:6px;
+	margin-bottom: 6px;
+}
+
+#frmRisk{
+	width: 730px;
+	background-color: #FFFFCC;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#s1 {  
+  font-family: Impact, sans-serif; 
+  font-size: 54px;
+  color: #006600;
+	text-align: center;
+	margin-top:6px;
+	margin-bottom: 6px;
+}
+
+.horizRule {
+	background-color:#006600; 
+	height: 10px; 
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.player {
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.dice {
+  height: 33px;
+  width: 33px;
+	margin-left: 15px;
+	margin-top: 10px;
+	text-align: right;
+}
+.sa2 {  
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 28px;
+  font-weight: bold;
+	margin-left: 20px;
+	margin-right: 20px; 
+	color: #990000;
+}
+.sd2 {  
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 28px;
+  font-weight: bold; 
+	margin-left: 20px;
+	margin-right: 20px; 
+  color: #000099;
+}
+.sa3 { 
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 20px;
+  color: #990000;
+}
+.sd3 {  
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 20px;
+  color: #000099;
+}
+.sa4 {  
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 14px;
+  font-weight: bold; 
+  color: #990000;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.sd4 {  
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 14px;
+  font-weight: bold; 
+  color: #000099;
+  margin-left: 32px;
+  margin-right: 20px;
+}
+#txtAttack { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 18px;
+	font-weight: bold; 
+	color: #990000; 
+	width: 60px; 
+	text-align: right;
+	margin-left: 12px;
+}
+#txtDefend { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 18px;
+	font-weight: bold;
+	color: #000099; 
+	width: 60px;
+	text-align:right;
+}
+#txtStopLoss { 
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 14px; 
+  font-weight: bold; 
+  color: #990000; 
+  width: 30px;
+  text-align:right;
+	margin-right: 30px;
+}
+#optDelay {
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 14px;
+  font-weight: bold; 
+  color: #000099;
+  margin-right: 6px;
+}
+#btnStart { 
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 16px; 
+  font-weight: bold; 
+  color: #660000; 
+  background-color: #FFCCCC; 
+  border-color:#CC0000; 
+  border-width:4px; 
+  width: 80px;
+  height: 36px;
+}
+#btnHalt { 
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  font-size: 16px; 
+  font-weight: bold; 
+  color: #000066; 
+  background-color: #CCCCFF; 
+  border-color:#0000CC; 
+  border-width:4px; 
+  width: 80px;
+  height: 36px;
+}

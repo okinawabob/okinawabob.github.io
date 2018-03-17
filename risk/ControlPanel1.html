@@ -1,0 +1,254 @@
+<html>
+   <head>
+      <title>Risk Dice Roller</title>
+      <style type="text/css">
+         .s1 {  font-family: Impact, sans-serif; font-size: 48pt; color: #006600}
+         .sa2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20pt; font-weight: bold; color: #990000}
+         .sd2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20pt; font-weight: bold; color: #000099}
+         .sa3 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14pt; color: #990000}
+         .sd3 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14pt; color: #000099}
+         .sa4 {  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; color: #990000}
+         .sd4 {  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; color: #000099}
+         .boxa { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 15pt; font-weight: bold; color: #990000; width=60px; text-align:right}
+         .boxd { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 15pt; font-weight: bold; color: #000099; width=60px; text-align:right}
+         .sboxa { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #990000; width=30px; text-align:right}
+         .sboxd { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #000099}
+         .StartButton { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #660000; background-color: #FFCCCC; border-color:#CC0000; border-width:5px; width:70px}
+         .StopButton  { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 900; color: #000066; background-color: #CCCCFF; border-color:#0000CC; border-width:5px; width:70px}
+      </style>
+      <script type="text/javascript">
+         var Timer1;
+         var Attackers, Defenders, StopLoss;
+         var DefRolls = new Array();
+         var AtkRolls = new Array();
+         var DieRed = new Array(7);
+         var DieBlu = new Array(7);
+         var SoldierRed = new Array(4);
+         var SoldierBlue = new Array(4);
+
+         for(var i=0; i<=6; i++)
+         {
+            DieRed[i] = new Image(33,33);
+            DieRed[i].src = "die"+i+"r.gif";
+            DieBlu[i] = new Image(33,33);
+            DieBlu[i].src = "die"+i+"b.gif";
+         }
+         for(var i=0; i<=4; i++)
+         {
+            SoldierRed[i] = new Image(58,69);
+            SoldierRed[i].src = "redSoldier"+i+".gif";
+            SoldierBlue[i] = new Image(58,69);
+            SoldierBlue[i].src = "blueSoldier"+i+".gif";
+         }
+
+         function PlayRisk()
+         {
+            // Get Input Data
+            Attackers = parseInt(document.frmRisk.txtAttack.value);
+            StopLoss = parseInt(document.frmRisk.txtStopLoss.value);
+            Defenders = parseInt(document.frmRisk.txtDefend.value);
+            if(Defenders >= 1 && Attackers > StopLoss)
+            {
+               // Select Quantity of Dice Defender
+               if(Defenders > 1)
+               {
+                  DefRolls = RollDice(2);
+                  document.frmRisk.imgDieDef0.src = DieBlu[DefRolls[0]].src;
+                  document.frmRisk.imgDieDef1.src = DieBlu[DefRolls[1]].src;
+                  parent.frames("fraDefend").document.images[Defenders-1].src = SoldierBlue[2].src;
+                  parent.frames("fraDefend").document.images[Defenders-2].src = SoldierBlue[1].src;
+               }
+               else
+               {
+                  DefRolls = RollDice(1);
+                  document.frmRisk.imgDieDef0.src = DieBlu[DefRolls[0]].src;
+                  document.frmRisk.imgDieDef1.src = DieBlu[0].src;
+                  parent.frames("fraDefend").document.images[Defenders-1].src = SoldierBlue[2].src;
+               }
+
+               // Select Quantity of Dice Attacker
+               if(Attackers >= 4)
+               {
+                  AtkRolls = RollDice(3);
+                  document.frmRisk.imgDieAtk0.src = DieRed[AtkRolls[0]].src;
+                  document.frmRisk.imgDieAtk1.src = DieRed[AtkRolls[1]].src;
+                  document.frmRisk.imgDieAtk2.src = DieRed[AtkRolls[2]].src;
+                  parent.frames("fraAttack").document.images[Attackers-1].src = SoldierRed[1].src;
+                  parent.frames("fraAttack").document.images[Attackers-2].src = SoldierRed[2].src;
+               }
+               else if(Attackers == 3)
+               {
+                  AtkRolls = RollDice(2);
+                  document.imgDieAtk0.src = DieRed[AtkRolls[0]].src;
+                  document.imgDieAtk1.src = DieRed[AtkRolls[1]].src;
+                  document.imgDieAtk2.src = DieRed[0].src;
+                  parent.frames("fraAttack").document.images[Attackers-1].src = SoldierRed[1].src;
+                  parent.frames("fraAttack").document.images[Attackers-2].src = SoldierRed[2].src;
+               }
+               else
+               {
+                  AtkRolls = RollDice(1);
+                  document.imgDieAtk0.src = DieRed[AtkRolls[0]].src;
+                  document.imgDieAtk1.src = DieRed[0].src;
+                  document.imgDieAtk2.src = DieRed[0].src;
+                  parent.frames("fraAttack").document.images[Attackers-1].src = SoldierRed[2].src;
+               }
+               Timer1 = window.setTimeout("DetermineWinner()", document.frmRisk.slcDelay.value);
+            }
+         }
+
+         function DetermineWinner()
+         {
+            if(DefRolls[0] >= AtkRolls[0])
+            {
+               Attackers--;
+//               document.sndDefend.run();
+               parent.frames("fraAttack").document.images[Attackers].src = SoldierRed[0].src;
+            }
+            else
+            {
+               Defenders--;
+//               document.sndAttack.run();
+               parent.frames("fraDefend").document.images[Defenders].src = SoldierBlue[0].src;
+            }
+            if(DefRolls.length > 1 && AtkRolls.length >1)
+            {
+               if(DefRolls[1] >= AtkRolls[1])
+               {
+                  Attackers--;
+//                  setTimeout("document.sndDefend.run()", 800);
+                  parent.frames("fraAttack").document.images[Attackers].src = SoldierRed[0].src;
+               }
+               else
+               {
+                  Defenders--;
+//                  setTimeout("document.sndAttack.run()", 800);
+                  parent.frames("fraDefend").document.images[Defenders].src = SoldierBlue[0].src;
+               }
+            }
+
+            // Display Results
+            document.frmRisk.txtAttack.value = Attackers;
+            document.frmRisk.txtDefend.value = Defenders;
+            PlayRisk();
+         }
+
+         function RollDice(Qty)
+         {
+            var Dice = new Array(Qty);
+            for(var i=0; i<Dice.length; i++)
+               Dice[i] = Math.ceil(6 * Math.random());
+            Dice.sort(SortIntMaxToMin);
+            return Dice;
+         }
+
+         function SortIntMaxToMin(val1, val2)
+         {
+            return parseInt(val2)-parseInt(val1);
+         }
+
+         function VerifyStopLoss()
+         {
+            if(parseInt(document.frmRisk.txtStopLoss.value) < 1 )
+            {
+               alert("Stop Loss must be greater then or equal to 1!");
+               document.frmRisk.txtStopLoss.value = 1;
+            }
+         }
+
+         function ChangeAttackers()
+         {
+            if(parseInt(document.frmRisk.txtAttack.value) < 2)
+            {
+               alert("You can't Attack unless you have two armies!");
+               document.frmRisk.txtAttack.value = 2;
+            }
+            ShowArmy("Attack", parseInt(document.frmRisk.txtAttack.value));
+         }
+
+         function ChangeDefenders()
+         {
+            if(parseInt(document.frmRisk.txtDefend.value) < 1)
+            {
+               alert("You must have at least one army in the country!");
+               document.frmRisk.txtDefend.value = 1;
+            }
+
+            ShowArmy("Defend", parseInt(document.frmRisk.txtDefend.value));
+         }
+
+         function ShowArmy(Side, Qty)
+         {
+            var Color;
+            parent.frames("fra"+Side).document.write('<html><head><\/head><body background="wpWar.jpg">');
+            if(Side=="Attack")
+               Color="red";
+            else
+               Color="blue";
+            for(var i=0; i<Qty; i++)
+               parent.frames("fra"+Side).document.write('<img src=\"'+Color+'Soldier3.gif\" \/>');
+            parent.frames("fra"+Side).document.write('<\/body><\/html>');
+            parent.frames("fra"+Side).document.close();
+         }
+
+      </script>
+</head>
+<body background="wpWar.jpg">
+   <embed src="Defend.wav" name="sndDefend" autostart="false" hidden="true" /></embed>
+   <embed src="Attack.wav" name="sndAttack" autostart="false" hidden="true" /></embed>
+   <embed src="charge.wav" name="sndCharge" autostart="true" hidden="true" /></embed>
+   <table width="600" border="0" align="center">
+     <tr>
+       <td align="left"><img src="SaluteSoldier.gif" border="0" width="41" height="80" /></td>
+       <td align="center" valign="bottom">
+         <p class="s1">Risk Dice Roller</p>
+       </td>
+       <td align="right"><img src="SaluteSoldier.gif" border="0" width="41" height="80" /></td>
+     </tr>
+     <tr bgcolor="#006600">
+       <td align="left" colspan="3">&nbsp;</td>
+     </tr>
+   </table>
+   <form name="frmRisk" method="post" action="">
+     <table border="0" align="center" width="600">
+       <tr>
+         <td align="left">
+           <input type="button" class="StartButton" name="butStart" value="Attack" onClick="PlayRisk()" />
+         </td>
+         <td align="right">
+           <p class=sa2>Attackers</p>
+         </td>
+         <td align="left">
+           <input type="text" class="boxa" name="txtAttack" size="3" maxlength="3" value="2" onChange="ChangeAttackers()" />
+         </td>
+         <td align="right" valign="middle"> <span class="sa4">Stop Loss</span>
+           <input type="text" class="sboxa" name="txtStopLoss" size="2" maxlength="2" value="1" onChange="VerifyStopLoss()" />
+         </td>
+         <td align="left" valign="middle">&nbsp;<img src="die0r.gif" width="33" height="33" name="imgDieAtk0"><img src="die0r.gif" width="33" height="33" name="imgDieAtk1" hspace="10"><img src="die0r.gif" width="33" height="33" name="imgDieAtk2"></td>
+       </tr>
+       <tr>
+         <td align="left">
+           <input type="button" class="StopButton" name="butStop" value="Halt" onClick="window.clearTimeout(Timer1);" />
+         </td>
+         <td align="right">
+           <p class="sd2">Defenders</p>
+         </td>
+         <td align="left">
+           <input type="text" class="boxd" name="txtDefend" size="3" maxlength="3" value="1" onChange="ChangeDefenders()" />
+         </td>
+         <td align="right" valign="middle"><span class="sd4">Delay</span>
+           <select name="slcDelay" size="1" class="sboxd">
+             <option value="100">0.1 Sec.</option>
+             <option value="500">0.5 Sec.</option>
+             <option value="1000">1.0 Sec.</option>
+             <option value="2000">2.0 Sec.</option>
+             <option value="3000" selected>3.0 Sec.</option>
+             <option value="5000">5.0 Sec.</option>
+           </select>
+         </td>
+         <td align="left" valign="middle">&nbsp;<img src=die0b.gif width="33" height="33" name="imgDieDef0">&nbsp;<img src="die0b.gif" width="33" height="33" name="imgDieDef1" hspace="10"></td>
+       </tr>
+     </table>
+   </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+// Sound Files to Objects
+// var sndCharge = new Audio("charge.wav");
+
+// Load Image Files
+
+<!-- 		
+		       onload="sndCharge.play()"
+<img src="die0r.gif" width="33" height="33" name="imgDieAtk0"><img src="die0r.gif" width="33" height="33" name="imgDieAtk1" hspace="10"><img src="die0r.gif" width="33" height="33" name="imgDieAtk2">
+<frameset rows="270,*" frameborder="NO">
+  <frame name="frmControlPanel" src="ControlPanel1.html" scrolling="NO" noresize frameborder="NO" />
+  <frameset cols="50%,50%">
+    <frame name="fraAttack" src="Attack.html" noresize scrolling="AUTO" frameborder="NO" />
+    <frame name="fraDefend" src="Defend.html" noresize scrolling="AUTO" frameborder="NO"/>
+    <noframes>
+    <body>
+    You need frames
+    </body>
+    </noframes> </frameset>
+</frameset>
+</html>
+ -->

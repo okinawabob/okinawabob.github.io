@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+		<title>Risk Game &raquo; Dice Roller</title>
+		<link href="riskmain.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="criskFunctions.js"></script>
+		<script type="text/javascript">
+
+		</script>
+  </head>
+  <body onload="sndCharge.play()">  
+      <form id="frmRisk" action="#">
+        <div id="s1">
+          <div id="SoldierLeft"><img src="SaluteSoldier.gif" alt="salute"></div>
+              Risk Dice Roller
+          <div id="SoldierRight" ><img src="SaluteSoldier.gif" alt="salute"></div>
+        </div>
+        <div id="apanel">
+          <input type="button" id="btnStart" value="Attack" onclick="PlayRisk()">
+        	<span class="sa2">Attackers</span>
+        	<input type="text" id="txtAttack" size="3" maxlength="3" value="2" onchange="ChangeAttackers()">
+        	<br>
+        	
+        	<img src="die0r.gif" id="imgDieAtk0" class="adice" alt="die">
+        	<img src="die0r.gif" id="imgDieAtk1" class="adice" alt="die">
+        	<img src="die0r.gif" id="imgDieAtk2" class="adice" alt="die">
+         <br><span class="sa4">Stop Loss</span>
+        	<input type="text" id="txtStopLoss" size="2" maxlength="2" value="1" onchange="VerifyStopLoss()">
+        </div>
+        <div id="dpanel">
+        	<input type="text" id="txtDefend" size="3" maxlength="3" value="1" onchange="ChangeDefenders()">
+        	<span class="sd2">Defenders</span>
+         <input type="button" id="btnHalt" value="Halt" onclick="window.clearTimeout(Timer1);">
+         <br><img src="die0b.gif" id="imgDieDef0" class="ddice" alt="die">
+        	<img src="die0b.gif" id="imgDieDef1" class="ddice" alt="die">
+        	<br><span class="sd4">Delay</span>
+          <select id="optDelay" name="optDelay" size="1">
+           <option value="100">0.1 Sec.</option>
+           <option value="300">0.3 Sec.</option>
+           <option value="1000">1.0 Sec.</option>
+           <option value="2000">2.0 Sec.</option>
+           <option value="5000" selected="selected">5.0 Sec.</option>
+           <option value="10000">10.0 Sec.</option>
+          </select>
+        </div>
+      </form>
+  </body>
+</html>

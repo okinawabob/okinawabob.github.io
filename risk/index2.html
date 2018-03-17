@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+		<title>Risk Game &raquo; Dice Roller</title>
+		<link href="riskmain.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="riskfunctions.js"></script>
+      <script type="text/javascript">
+      var sndCharge = new Audio("charge.wav");
+			
+      var Timer1;
+      var Attackers, Defenders, StopLoss;
+      var DefRolls = new Array();
+      var AtkRolls = new Array();
+      var DieRed = new Array(7);
+      var DieBlu = new Array(7);
+      var SoldierRed = new Array(4);
+      var SoldierBlue = new Array(4);
+      
+
+         for(var i=0; i<=6; i++)
+         {
+            DieRed[i] = new Image(33,33);
+            DieRed[i].src = "die"+i+"r.gif";
+            DieBlu[i] = new Image(33,33);
+            DieBlu[i].src = "die"+i+"b.gif";
+         }
+         for(var i=0; i<=4; i++)
+         {
+            SoldierRed[i] = new Image(58,69);
+            SoldierRed[i].src = "redSoldier"+i+".gif";
+            SoldierBlue[i] = new Image(58,69);
+            SoldierBlue[i].src = "blueSoldier"+i+".gif";
+         }
+      </script>
+</head>
+<body onload="sndCharge.play()">
+
+
+	<!-- <audio id="auCharge" src="charge.mp3" preload="auto"></audio>
+ 	<audio controls="controls" autoplay="autoplay" >
+  	<source src="charge.wav" type="audio/wav">
+		
+  <source src="song.mp3" type="audio/mp3" />
+  Your browser does not support the audio element.
+	</audio>
+   <embed src="Defend.wav" name="sndDefend" autostart="false" hidden="true" /></embed>
+   <embed src="Attack.wav" name="sndAttack" autostart="false" hidden="true" /></embed>
+   <embed src="charge.wav" name="sndCharge" autostart="true" hidden="true" /></embed>
+ -->   
+ 	<form name="frmRisk" action="">
+	<table width="800" border="1" align="center">
+     <tr>
+       <td colspan="2" id="s1" valign="bottom">
+			 	<img src="SaluteSoldier.gif" align="left" alt="salute">
+        Risk Dice Roller
+       	<img src="SaluteSoldier.gif" align="right" alt="salute">
+			 </td>
+     </tr>
+     <tr style="background-color:#006600" colspan="2" ><td>&nbsp;</td></tr>
+		 <tr><td width="50%" align="right">
+		 		<p><button id="btnStart" onClick="PlayRisk()">Attack</button> 
+        <span class="sa2" style="color: #990000;">Attackers</span>
+        <input type="text" id="boxa" id="txtAttack" size="3" maxlength="3" value="2" onChange="ChangeAttackers()">
+				<span class="sa4">Stop Loss</span>
+        <input type="text" id="txtStopLoss" size="2" maxlength="2" value="1" onChange="VerifyStopLoss()" />
+		  	</p></td><td width="50%">
+	 			<button id="btnHalt" onClick="PlayRisk()">Halt</button> 
+            <span class="sa2" style="color: #990000;">Defenders</span>
+          	<input type="text" id="boxa" name="txtAttack" size="3" maxlength="3" value="2" onChange="ChangeAttackers()" />
+		  	</td><td width="50%">
+		 
+		 </td></tr>
+   </table>
+
+     <table border="0" align="center" width="600">
+       <tr>
+           <td align="left">
+          </td>
+         <td align="right" valign="middle">
+           <input type="text" class="sboxa" name="txtStopLoss" size="2" maxlength="2" value="1" onChange="VerifyStopLoss()" />
+         </td>
+         <td align="left" valign="middle">&nbsp;<img src="die0r.gif" width="33" height="33" name="imgDieAtk0"><img src="die0r.gif" width="33" height="33" name="imgDieAtk1" hspace="10"><img src="die0r.gif" width="33" height="33" name="imgDieAtk2"></td>
+       </tr>
+       <tr>
+         <td align="left">
+           <input type="button" class="StopButton" name="butStop" value="Halt" onClick="window.clearTimeout(Timer1);" />
+         </td>
+         <td align="right">
+           <p class="sd2">Defenders</p>
+         </td>
+         <td align="left">
+           <input type="text" class="boxd" name="txtDefend" size="3" maxlength="3" value="1" onChange="ChangeDefenders()" />
+         </td>
+         <td align="right" valign="middle"><span class="sd4">Delay</span>
+           <select name="slcDelay" size="1" class="sboxd">
+             <option value="100">0.1 Sec.</option>
+             <option value="500">0.5 Sec.</option>
+             <option value="1000">1.0 Sec.</option>
+             <option value="2000">2.0 Sec.</option>
+             <option value="3000" selected>3.0 Sec.</option>
+             <option value="5000">5.0 Sec.</option>
+           </select>
+         </td>
+         <td align="left" valign="middle">&nbsp;<img src=die0b.gif width="33" height="33" name="imgDieDef0">&nbsp;<img src="die0b.gif" width="33" height="33" name="imgDieDef1" hspace="10"></td>
+       </tr>
+     </table>
+   </form>
+</body>
+</html>
+		
+<!-- 		
+		
+		
+<frameset rows="270,*" frameborder="NO">
+  <frame name="frmControlPanel" src="ControlPanel1.html" scrolling="NO" noresize frameborder="NO" />
+  <frameset cols="50%,50%">
+    <frame name="fraAttack" src="Attack.html" noresize scrolling="AUTO" frameborder="NO" />
+    <frame name="fraDefend" src="Defend.html" noresize scrolling="AUTO" frameborder="NO"/>
+    <noframes>
+    <body>
+    You need frames
+    </body>
+    </noframes> </frameset>
+</frameset>
+</html>
+ -->

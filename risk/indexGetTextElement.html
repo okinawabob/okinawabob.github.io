@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+		<title>Risk Game &raquo; Dice Roller</title>
+		<link href="riskmain.css" rel="stylesheet" type="text/css">
+	   <script type="text/javascript">
+
+function PlayRisk()
+{
+   var Attackers = document.getElementById("txtAttack");
+   var Str = 0;
+   alert(Str);
+   Attackers.value = "37";
+   Str  = Attackers.value;
+   alert(Str);
+}
+      </script>
+  </head>
+  <body>
+
+    <form name="frmRisk" id="frmRisk" action="#">
+      <div id="s1">
+      	<img src="SaluteSoldier.gif" align="left" alt="salute">
+            Risk Dice Roller
+         <img src="SaluteSoldier.gif" align="right" alt="salute">
+      </div>
+      <div class="horizRule"></div>
+
+        <input type="button" id="btnStart" value="Attack" onclick="PlayRisk();">
+      	<span class="sa2">Attackers</span>
+      	<input type="text" id="txtAttack" size="3" maxlength="3" value="2" onchange="PlayRisk()">
+
+
+
+      <div class="horizRule"></div>
+    </form>
+  </body>
+</html>
+		
