@@ -130,19 +130,18 @@ a:active {
   color: #FFFF00;
 }
 
-div#statCounter {
+#statCounter {
   margin: 1em;
-  height: 4.5em;
   font-size: 1em;
 }
 
-div#statCounter p {
+#statCounter p {
   font-family: "Times New Roman", "Times", serif;
   font-weight: normal;
   margin-bottom: 0.75em;
 }
 
-div#statCounter div {
+#statCounter div {
   font-family: "Times New Roman", "Times", serif;
   font-weight: normal;
   margin-bottom: 0.75em;
